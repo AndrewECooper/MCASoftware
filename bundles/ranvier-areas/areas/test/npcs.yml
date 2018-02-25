@@ -1,0 +1,6 @@
+- id: 1
+  keywords: ['mouse', 'Gustav' ]
+  name: Gustav the Mouse
+  level: 2
+  description: "A frail looking cotton-ball-like creature. He seems to be strangely friendly, but he often mistakes your fingers for food."
+  script: '1-mouse'

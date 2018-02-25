@@ -148,6 +148,8 @@
       direction: up
     - roomId: "limbo:11"
       direction: east
+    - roomId: "test:1"
+      direction: down
   doors:
     "limbo:8":
       lockedWith: false

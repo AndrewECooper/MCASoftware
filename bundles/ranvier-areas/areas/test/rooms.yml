@@ -1,0 +1,35 @@
+- id: 1
+  title: Your cell
+  description: "Three gray stone walls, cold as ice and damp to the touch. Instead of another wall, there are iron bars. In the corner there is a small fluffy object."
+  npcs: ["test:1" ]
+  items:
+    - id: "test:1"
+      respawnChance: 20
+      replaceOnRespawn: true # when this chest respawns completely replace it so its contents get refreshed
+  exits:
+    - roomId: "limbo:2"
+      direction: east
+      leaveMessage: " steps into the void and disappears."
+    - roomId: "limbo:8"
+      direction: down
+    - roomId: "limbo:9"
+      direction: west
+    - roomId: "mapped:start"
+      direction: north
+- id: 2
+  title: ""
+  description: "A completely black room. Somehow all of the light that should be coming from the room to the west does not pass
+    through the archway. A single lightbulb hangs from the ceiling illuminating a small area. To the east you see a 
+    large white dome. There is a sign above the entrance to the dome: 'Training Area'"
+  script: "2-look"
+  items:
+    - id: "limbo:2"
+      respawnChance: 10
+  npcs: ["limbo:2", "limbo:3"]
+  exits:
+    - roomId: "limbo:1"
+      direction: west
+      leaveMessage: " steps into the light and disappears."
+    - roomId: "limbo:3"
+      direction: east
+
