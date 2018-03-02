@@ -14,3 +14,18 @@
     speed: 1
     stats:
       critical: 1
+- id: 2
+  name: "a knife"
+  type: WEAPON
+  keywords: [ "knife"]
+  description: "an ordinary knife...or is it?"
+  metadata:
+    level: 1
+    slot: 'wield'
+    itemLevel: 1
+    quality: common
+    minDamage: 1
+    maxDamage: 10 
+    speed: 1
+    stats:
+      critical: 1
