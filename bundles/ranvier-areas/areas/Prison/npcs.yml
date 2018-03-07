@@ -27,7 +27,7 @@
     A large human shaped mouse stares at you intently, and lunges to attack
   attributes:
     health: 500
-    strength: 70
+    strength: 50
   behaviors:
     combat: true
     lootable:
@@ -100,7 +100,7 @@
 - id: 8
   keywords: ["guard", "soldier", "security", "dummy"]
   name: "The guard"
-  level: 5
+  level: 5 
   description: >-
     An old soldier
   attributes:
