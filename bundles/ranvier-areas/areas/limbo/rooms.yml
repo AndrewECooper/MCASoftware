@@ -1,22 +1,9 @@
 - id: 1
-  title: Test Room 1
-  description: "A featureless white room. A pitch black void in the shape of archway can be seen on the east side of the room."
-  npcs: ["limbo:1" ]
-  items:
-    - id: "limbo:3"
-      respawnChance: 20
-      replaceOnRespawn: true # when this chest respawns completely replace it so its contents get refreshed
-  script: "1-test"
+  title: Game Lobby
+  description: "Go up, there you will start the game The Call of Topedus"
   exits:
-    - roomId: "limbo:2"
-      direction: east
-      leaveMessage: " steps into the void and disappears."
-    - roomId: "limbo:8"
-      direction: down
-    - roomId: "limbo:9"
-      direction: west
-    - roomId: "mapped:start"
-      direction: north
+    - roomId: "Prison:1"
+      direction: up
 - id: 2
   title: "Test Room 2"
   description: >-
@@ -148,8 +135,6 @@
       direction: up
     - roomId: "limbo:11"
       direction: east
-    - roomId: "test:1"
-      direction: down
   doors:
     "limbo:8":
       lockedWith: false

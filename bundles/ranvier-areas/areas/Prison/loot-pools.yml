@@ -1,0 +1,9 @@
+---
+weapons:
+  - "Prison:1"
+armor: 
+  - "Prison:3"
+  - "Prison:4"
+dude:
+  - "Prison:10"
+  - "Prison:8"

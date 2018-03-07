@@ -1,0 +1,117 @@
+- id: 1
+  keywords: ["guard", "soldier", "security", "dummy"]
+  name: "The guard"
+  level: 5
+  description: >-
+    An old soldier now watches the exits, kill him, or try to sneak past
+  attributes:
+    health: 200
+    strength: 9
+  behaviors:
+    combat: true
+    lootable:
+      currencies:
+        gold:
+          min: 2
+          max: 10
+      pools: 
+        - "Prison:3": 100
+        - "Prison:5": 100      
+- id: 2
+  keywords: ["mutant mouse", "mouse", "mutant", "rat"]
+  name: "mutant mouse"
+  level: 7
+  script: 'mouse' 
+  quests: ['Prison:4']
+  description: >-
+    A large human shaped mouse stares at you intently, and lunges to attack
+  attributes:
+    health: 500
+    strength: 70
+  behaviors:
+    combat: true
+    lootable:
+      currencies:
+        gold:
+          min: 25
+          max: 30
+- id: 3
+  keywords: ["guard", "officer","soldier", "guardsman"]
+  name: "guardsman"
+  level: 5
+  description: >-
+    a man in dark uniform, bearing a sword and ready for rowdy prisoners
+  attributes:
+    health: 300
+    strength: 15
+  behaviors:
+    combat: true
+    ranvier-aggro:
+      delay: 5
+    lootable:
+      currencies:
+        gold:
+          min: 1
+          max: 12
+      pools:
+        - "Prison:4": 100
+- id: 4
+  keywords: ['mouse']
+  name: A mouse
+  level: 2
+  description: "In the corner of your cell, there is a disgustingly cute rodent thing. It looks at you intently."
+  quests: ['Prison:1']
+- id: 5
+  keywords: ['prisoner', 'inmate', 'destitute']
+  name: destitute inmate
+  level: 420
+  script: 'inmate'
+  description: "A poor crusty inmate sits in the cell across from yours."
+  quests: ['Prison:2']
+- id: 6
+  keywords: ['dude', 'creepy', 'scarred']
+  name: creepy scarred dude
+  level: 47
+  script: 'guy'
+  description: |- 
+    "The scarred inmate looks at you with curiosity, 'I want to get out of here too, get my statue for me, and I'll show you the way out of here.' "
+    - enter 'quest start dude 1' to start the quest
+  quests: ['Prison:3']
+  attributes: 
+    health: 200
+    strength: 50
+  behaviors:
+    combat: true
+    lootable: 
+      pools:
+        - "Prison:dude": 100
+- id: 7
+  keywords: ['archer', 'guard', 'scary']
+  name: Archer on the wall
+  level: 25
+  description: "You's gonna die..."
+  attributes:
+    health: 100
+    strength: 100
+  behaviors:
+    combat: true
+    ranvier-aggro: 
+      - delay: 1
+- id: 8
+  keywords: ["guard", "soldier", "security", "dummy"]
+  name: "The guard"
+  level: 5
+  description: >-
+    An old soldier
+  attributes:
+    health: 200
+    strength: 9
+  behaviors:
+    combat: true
+    ranvier-aggro: 
+      - delay: 5
+    lootable:
+      currencies:
+        gold:
+          min: 29
+          max: 100
