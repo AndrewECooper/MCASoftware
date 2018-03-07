@@ -186,19 +186,19 @@
       value: 150
       currency: gold
 - id: 14
-  name: iron trousers
+  name: iron boots
   type: ARMOR
-  keywords: ["iron", "trousers"]
+  keywords: ["iron", "boots"]
   metadata:
     quality: rare
     slot: legs
     level: 1
     itemLevel: 1
     stats: 
-      armor: 1000
+      armor: 100
   behaviors:
     sellable:
-      value: 1000
+      value: 180
       currency: gold
 - id: 15
   name: mouse's nest
