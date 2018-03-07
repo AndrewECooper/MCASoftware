@@ -92,7 +92,7 @@
   description: "You's gonna die..."
   attributes:
     health: 100
-    strength: 100
+    strength: 100   
   behaviors:
     combat: true
     ranvier-aggro: 
