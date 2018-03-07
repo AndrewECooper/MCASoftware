@@ -186,7 +186,7 @@
       value: 150
       currency: gold
 - id: 14
-  name: iron boots
+s  name: iron boots
   type: ARMOR
   keywords: ["iron", "boots"]
   metadata:

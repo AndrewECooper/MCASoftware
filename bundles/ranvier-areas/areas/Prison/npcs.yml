@@ -102,7 +102,7 @@
   name: "The guard"
   level: 5 
   description: >-
-    An old soldier
+    A guard, wearing a rusty helmet and a sword on his hip
   attributes:
     health: 200
     strength: 9
