@@ -98,7 +98,7 @@
       config:
         title: Kill 5 guards
         count: 5
-        npcs: ['Prison:8', 'Prison:1', 'Prison:3']
+        npc: ['Prison:8', 'Prison:1', 'Prison:3']
   rewards:
     - type: ExperienceReward
       config:
