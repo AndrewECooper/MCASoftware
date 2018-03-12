@@ -34,7 +34,6 @@
 - id: 2
   title: "Kill the guard"
   level: 1
-  requires: ['Prison:1']
   autoComplete: true
   description: |-
     The guards don't want you to escape.  You could sneak by, but the inmate wants you to kill the guard up ahead.
