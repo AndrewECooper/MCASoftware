@@ -95,9 +95,19 @@
         removeItem: true
     - type: KillGoal
       config:
-        title: Kill 5 guards
-        count: 5
-        npc: ['Prison:8', 'Prison:1', 'Prison:3']
+        title: Kill 2 guards
+        count: 2
+        npc: ['Prison:8']
+    - type: KillGoal
+      config: 
+        title: Kill 1 "the guard"
+        count: 1
+        npc: ['Prison:1']
+    - type: KillGoal
+      config:
+        title: Kill 1 guardsman
+        count: 1
+        npc: ['Prison:3']
   rewards:
     - type: ExperienceReward
       config:
