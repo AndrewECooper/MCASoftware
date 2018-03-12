@@ -61,7 +61,7 @@
   title: The mysterious statue
   level: 3
   description: |-
-    The thing looks like a mouse, it honors my master, Topedus.  I don't know where it might be.
+    The thing looks like a mouse, it honors my master, Topedus.  I don't know where it might be.    (To complete the quest, input 'quest complete 1')
   completionMessage: |-
     "That's it! That's Topedus, give it to me!" The inmate then runs away. 
   goals:

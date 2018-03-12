@@ -7,7 +7,9 @@
   items:
    - id: "Prison:15"
      respawnChance: 10
-  npcs: ["Prison:4"]
+  npcs: 
+    - id: "Prison:4"
+      respawnChance: 0
   exits:
     - roomId: "Prison:2"
       direction: east
@@ -19,7 +21,9 @@
 - id: 2
   title: Hallway
   description: "A long, wide hallway with a low ceiling. Torches and cell doors line the walls. There is a guard north of you."
-  npcs: ["Prison:5"]
+  npcs: 
+    - id: "Prison:5"
+      respawnChance: 0
   items:
    - id: "Prison:1"
      respawnChance: 10
@@ -42,7 +46,9 @@
 - id: 4
   title: Near Hallway exit
   description: "You are on the second level of the prison, the exit behind this guard should take you down to the first level"
-  npcs: ["Prison:1"]
+  npcs: 
+    - id: "Prison:1"
+      respawnChance: 0
   exits: 
     - roomId: "Prison:2"
       direction: south
@@ -89,7 +95,9 @@
 - id: 8 
   title: Cell - 3
   description: "an inhabited cell, the guy in here is asleep"
-  npcs: ["Prison:6"]
+  npcs: 
+    - id: "Prison:6"
+      respawnChance: 0
   exits: 
     - roomId: "Prison:5"
       direction: east
@@ -112,7 +120,7 @@
   description: "blah"
   npcs: 
    - id: "Prison:3"
-     respawnChance: 10
+     respawnChance: 0
   items: 
     - id: "Prison:12"
   exits: 
@@ -138,7 +146,9 @@
 - id: 13
   title: Solitary Cell
   description: "A lonely, dark cell.  The air of the room is full of melancholy, and asbestos..."
-  npcs: ["Prison:2"]
+  npcs: 
+    - id: "Prison:2"
+      respawnChance: 0
   exits: 
     - roomId: "Prison:12"
       direction: west
