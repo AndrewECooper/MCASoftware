@@ -115,3 +115,16 @@
         gold:
           min: 29
           max: 100
+- id: 9
+  keywords: ["boss", "warden", "guard"]
+  name: "Prison Warden"
+  level: 10
+  description: >-
+    a beastly, grizzled man decked out in full armor, with a shiny curved scimitar on his side.
+  attributes:
+    combat: true
+    ranvier-aggro:
+      - delay: 10
+    lootable:
+      - pools: 
+        - "Prison:Warden": 100

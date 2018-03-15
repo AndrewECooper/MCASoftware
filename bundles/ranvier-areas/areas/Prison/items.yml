@@ -162,10 +162,10 @@
   name: dusty chest
   type: CONTAINER
   roomDesc: "a dusty chest with CONTRABAND written on it"
-  keywords: ["chest", "dusty", "contra"]
+  keywords: ["chest", "dusty", "contraband"]
   description: "An old dusty chest with Contraband roughly carved into it, probably with a knife."
-  items: ["Prison:11", "Prison:13", "Prison:14"]
-  maxItems: 3
+  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8"]
+  maxItems: 10
   metadata:
     noPickup: true
 - id: 13
@@ -225,3 +225,23 @@
   metadata:
     qualtity: common
   behaviors:
+  - id: 18
+  name: "Cool Scimitar"
+  keywords: ["cool", "scimitar", "blade"]
+  roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
+  description: "a shiny, slightly scratched, eastern scimitar, from the warden"
+  script: "1-sword"
+  metadata:
+    level: 6
+    slot: 'wield'
+    itemLevel: 6
+    quality: rare
+    minDamage: 200
+    maxDamage: 300
+    speed: 2
+    stats:
+      critical: 5
+    behaviors:
+      sellable:
+        value: 200
+        currrency: gold

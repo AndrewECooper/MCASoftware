@@ -121,13 +121,13 @@
   npcs: 
    - id: "Prison:3"
      respawnChance: 0
-  items: 
-    - id: "Prison:12"
   exits: 
     - roomId: "Prison:9"
       direction: west
     - roomId: "Prison:12"
       direction: down
+    - roomId: "Prison:16"
+      direction: east
 - id: 12
   title: Solitary hall
   description: "Before you is a strong metal door, behind it must lie the most dangerous prisoner here, or the most insane..."
@@ -184,3 +184,15 @@
   exits:
     - roomId: "Prison:14"
       direction: east
+- id: 16
+  title: Warden's Office
+  description: "blah"
+  items: 
+    - id: "Prison:12"
+      respawnChance: 0
+  npcs: 
+    - id: "Prison:9"
+      respawnChance: 0
+  exits:
+    - roomId: "Prison:11"
+      direction: west

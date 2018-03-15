@@ -7,3 +7,6 @@ armor:
 dude:
   - "Prison:10"
   - "Prison:8"
+warden:
+  - "Prison:solitary-3 key"
+  - "Prison:18"
