@@ -80,41 +80,25 @@
         currency: gold
         amount: 3  
 - id: 4
-  title: Mice
-  level: 6
+  title: The Mice
+  level: 5
   description: |-
-    The Mice demand a sacrifice
-  completionMessage: |-
-    upon your return, the mice have built a small raft for you and point you towards the harbor
+    The mice, or perhaps rats, seem to want the Topedus carvings, the leader of them points to you, then the statue, and holds up 3 clawed fingers, then points to the far wall, it seems that if you do what he wants, he will let you through to the other side of the large stone door.
+  completeMessage: |-
+    The mouse looks at your offering, snatches away the statues, and orders 2 others to open the door, light floods through, you see a small harbor, and a raft.  Go, and be free.
   goals:
     - type: FetchGoal
       config:
-        title: Find 3 Topedus Statues
+        title: Find 3 Topedus carvings
         count: 3
         item: 'Prison:8'
         removeItem: true
-    - type: KillGoal
-      config:
-        title: Kill 2 guards
-        count: 2
-        npc: 'Prison:8'
-    - type: KillGoal
-      config: 
-        title: Kill 1 "the guard"
-        count: 1
-        npc: 'Prison:1'
-    - type: KillGoal
-      config:
-        title: Kill 1 guardsman
-        count: 1
-        npc: 'Prison:3'
   rewards:
     - type: ExperienceReward
       config:
-        amount: 5000000
-        leveledTo: PLAYER
-    - type: CurrencyReward
-      config:
-        currency: gold
-        amount: 700000000
-    - id: "Prison:1"
+        amount: 2000
+        leveledTo: QUEST
+    - item:
+       - id: "Prison:16"
+    
+    

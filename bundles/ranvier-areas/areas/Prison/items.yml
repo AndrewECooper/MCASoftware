@@ -70,7 +70,6 @@
   keywords: ["shiv"]
   description: "a primitive, but dangerous weapon"
   script: "1-sword"
-  
   metadata:
     level: 1
     slot: 'wield'
@@ -86,7 +85,7 @@
       value: 100
       currency: gold
 - id: cell-1 key
-  name: "metal pin"
+  name: metal pin
   keywords: ["metal", "pin"]
   roomDesc: "an old metal pin"
   description: "a shiny metal pin, used in the mouse's nest, you can probably use this to pick the lock."
@@ -201,7 +200,7 @@
       value: 180
       currency: gold
 - id: 15
-  name: mouse's nest
+  name: "mouse's nest"
   type: CONTAINER
   roomDesc: "The tiny mouse sits atop his throne. Well, his pile of leaves, fabric, flesh, and ..?"
   keywords: ["nest", "mouse's", "twiggy thing", "throne", "pile", "flesh", "leaves"]
@@ -210,3 +209,19 @@
   maxItems: 1
   metadata: 
     noPickup: true
+- id: mouse-2 key
+  name: "mouse shaped key"
+  keywords: ["mouse", "key", "shaped"]
+  roomDesc: "a strange, metal key"
+  description:  "a strange, metal key that is shaped like a mouse, the tail leads into the head of the key."
+  metadata: 
+    quality: rare
+  behaviors:  
+- id: solitary-3 key
+  name: "Solitary Key"
+  keywords: ["solitary", "key"]
+  roomDesc: "a rusty key from the solitary confinement offices"
+  description: "A rusty key, probably for the cell in solitary confinement."
+  metadata:
+    qualtity: common
+  behaviors:

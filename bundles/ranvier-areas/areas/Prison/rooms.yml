@@ -9,7 +9,7 @@
      respawnChance: 10
   npcs: 
     - id: "Prison:4"
-      respawnChance: 100
+      respawnChance: 0
   exits:
     - roomId: "Prison:2"
       direction: east
@@ -23,7 +23,7 @@
   description: "A long, wide hallway with a low ceiling. Torches and cell doors line the walls. There is a guard north of you."
   npcs: 
     - id: "Prison:5"
-      respawnChance: 100
+      respawnChance: 0
   items:
    - id: "Prison:1"
      respawnChance: 10
@@ -76,7 +76,7 @@
   description: "a guard stand before the door, you're in for a fight"
   npcs: 
    - id: "Prison:3"
-     respawnChance: 100
+     respawnChance: 0
   items: 
    - id: "Prison:9"
   exits: 
@@ -97,7 +97,7 @@
   description: "an inhabited cell, the guy in here is asleep"
   npcs: 
     - id: "Prison:6"
-      respawnChance: 100
+      respawnChance: 0
   exits: 
     - roomId: "Prison:5"
       direction: east
@@ -120,7 +120,7 @@
   description: "blah"
   npcs: 
    - id: "Prison:3"
-     respawnChance: 100
+     respawnChance: 0
   items: 
     - id: "Prison:12"
   exits: 
@@ -135,20 +135,25 @@
     - id: "Prison:5"
   npcs: 
    - id: "Prison:8"
-     respawnChance: 100 
+     respawnChance: 0 
    - id: "Prison:8"
-     respawnChance: 100
+     respawnChance: 0
   exits: 
     - roomId: "Prison:11"
       direction: up
     - roomId: "Prison:13"
       direction: east
+  doors: 
+    "Prison:13":
+      lockedBy: "Prison:17"
+      locked: true
+      closed: true
 - id: 13
   title: Solitary Cell
   description: "A lonely, dark cell.  The air of the room is full of melancholy, and asbestos..."
-  npcs: 
-    - id: "Prison:2"
-      respawnChance: 100
+  items: 
+    - id: "Prison:8"
+      respawnChance: 0
   exits: 
     - roomId: "Prison:12"
       direction: west
@@ -160,11 +165,19 @@
   items: 
     - id: "Prison:8"
       respawnChance: 0
+  npcs: 
+    - id: "Prison:2"
+      respawnChance: 0
   exits:
     - roomId: "Prison:13"
       direction: up
     - roomId: "Prison:15"
       direction: west
+  doors:
+    "Prison:15":
+      lockedBy: "Prison:mouse-2 key"
+      locked: true
+      closed: true
 - id: 15
   title: harbor
   description: "blah"
