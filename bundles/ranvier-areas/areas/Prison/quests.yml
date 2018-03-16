@@ -103,6 +103,7 @@
 - id: 5
   title: The Warden
   level: 5
+  requires: ['Prison:3']
   description: |-
     Nice, i want you to kill the warden, do that, and you can keep his awesome sword
   completeMessage: |-

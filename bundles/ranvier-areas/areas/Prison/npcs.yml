@@ -76,7 +76,7 @@
   description: |- 
     "The scarred inmate looks at you with curiosity, 'I want to get out of here too, get my statue for me, and I'll show you the way out of here.' "
     - enter 'quest start dude 1' to start the quest
-  quests: ['Prison:3']
+  quests: ['Prison:3', 'Prison:5']
   attributes: 
     health: 200
     strength: 50
