@@ -84,7 +84,7 @@
     combat: true
     lootable: 
       pools:
-        - "Prison:dude": 100
+        - "Prison:18": 100
 - id: 7
   keywords: ['archer', 'guard', 'scary']
   name: Archer on the wall
@@ -129,5 +129,7 @@
     ranvier-aggro:
       - delay: 10
     lootable:
-      pools: 
-        - "Prison:warden": 100
+      currencies: 
+        gold:
+          min: 100
+          max: 400

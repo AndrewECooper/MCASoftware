@@ -164,7 +164,7 @@
   roomDesc: "a dusty chest with CONTRABAND written on it"
   keywords: ["chest", "dusty", "contraband"]
   description: "An old dusty chest with Contraband roughly carved into it, probably with a knife."
-  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8"]
+  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8", "Prison:18", "Prison:s-3 key"]
   maxItems: 10
   metadata:
     noPickup: true

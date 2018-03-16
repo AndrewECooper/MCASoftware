@@ -104,6 +104,7 @@
   title: The Warden
   level: 5
   requires: ['Prison:3']
+  autoComplete: true
   description: |-
     Nice, i want you to kill the warden, do that, and you can keep his awesome sword
   completeMessage: |-
@@ -115,12 +116,9 @@
         npc: 'Prison:9'
         count: 1
   rewards:
-    - type: ExperienceReward
-      config: 
-        amount: 1000
-        leveledTo: PLAYER
     - type: CurrencyReward
       config:
+        currency: gold
         amount: 1000
         leveledTo: PLAYER
     
