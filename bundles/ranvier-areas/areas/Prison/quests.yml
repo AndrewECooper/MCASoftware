@@ -100,5 +100,27 @@
         leveledTo: QUEST
     - item:
        - id: "Prison:16"
+- id: 5
+  title: The Warden
+  level: 5
+  description: |-
+    Nice, i want you to kill the warden, do that, and you can keep his awesome sword
+  completeMessage: |-
+    cool, loot him and the chest
+  goals:
+    - type: KillGoal
+      config:
+        title: Kill the Warden
+        npc: 'Prison:9'
+        count: 1
+  rewards:
+    - type: ExperienceReward
+      config: 
+        amount: 1000
+        leveledTo: PLAYER
+    - type: CurrencyReward
+      config:
+        amount: 1000
+        leveledTo: PLAYER
     
     

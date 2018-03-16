@@ -204,7 +204,7 @@
   type: CONTAINER
   roomDesc: "The tiny mouse sits atop his throne. Well, his pile of leaves, fabric, flesh, and ..?"
   keywords: ["nest", "mouse's", "twiggy thing", "throne", "pile", "flesh", "leaves"]
-  description: "The cute fluffy tiny adorable mouse squeaks and moves around in his nest, revealing a shiny metal object."
+  description: "The fluffy tiny mouse squeaks and moves around in his nest, revealing a shiny metal object."
   items: ["Prison:cell-1 key"]
   maxItems: 1
   metadata: 
@@ -217,7 +217,7 @@
   metadata: 
     quality: rare
   behaviors:  
-- id: solitary-3 key
+- id: s-3 key
   name: "Solitary Key"
   keywords: ["solitary", "key"]
   roomDesc: "a rusty key from the solitary confinement offices"
@@ -226,21 +226,21 @@
     qualtity: common
   behaviors:
   - id: 18
-  name: "Cool Scimitar"
-  keywords: ["cool", "scimitar", "blade"]
-  roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
-  description: "a shiny, slightly scratched, eastern scimitar, from the warden"
-  script: "1-sword"
-  metadata:
-    level: 6
-    slot: 'wield'
-    itemLevel: 6
-    quality: rare
-    minDamage: 200
-    maxDamage: 300
-    speed: 2
-    stats:
-      critical: 5
+    name: "Cool Scimitar"
+    keywords: ["cool", "scimitar", "blade"]
+    roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
+    description: "a shiny, slightly scratched, eastern scimitar, from the warden"
+    script: "1-sword"
+    metadata:
+      level: 6
+      slot: 'wield'
+      itemLevel: 6
+      quality: rare
+      minDamage: 200
+      maxDamage: 300
+      speed: 2
+      stats:
+        critical: 5
     behaviors:
       sellable:
         value: 200

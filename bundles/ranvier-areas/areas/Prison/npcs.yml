@@ -122,9 +122,12 @@
   description: >-
     a beastly, grizzled man decked out in full armor, with a shiny curved scimitar on his side.
   attributes:
+    health: 500
+    strength: 20
+  behaviors:
     combat: true
     ranvier-aggro:
       - delay: 10
     lootable:
-      - pools: 
-        - "Prison:Warden": 100
+      pools: 
+        - "Prison:warden": 100
