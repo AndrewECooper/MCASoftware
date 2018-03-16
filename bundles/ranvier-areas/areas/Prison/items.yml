@@ -164,7 +164,7 @@
   roomDesc: "a dusty chest with CONTRABAND written on it"
   keywords: ["chest", "dusty", "contraband"]
   description: "An old dusty chest with Contraband roughly carved into it, probably with a knife."
-  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8", "Prison:18", "Prison:s-3 key"]
+  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8", "Prison:18", "Prison:17"]
   maxItems: 10
   metadata:
     noPickup: true
@@ -216,32 +216,32 @@
   description:  "a strange, metal key that is shaped like a mouse, the tail leads into the head of the key."
   metadata: 
     quality: rare
-  behaviors:  
-- id: s-3 key
+  behaviors:
+- id: 17
   name: "Solitary Key"
   keywords: ["solitary", "key"]
   roomDesc: "a rusty key from the solitary confinement offices"
   description: "A rusty key, probably for the cell in solitary confinement."
   metadata:
     qualtity: common
+  behaviors:  
+- id: 18
+  name: "Cool Scimitar"
+  keywords: ["cool", "scimitar", "blade"]
+  roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
+  description: "a shiny, slightly scratched, eastern scimitar, from the warden"
+  script: "1-sword"
+  metadata:
+    level: 6
+    slot: 'wield'
+    itemLevel: 6
+    quality: rare
+    minDamage: 200
+    maxDamage: 300
+    speed: 2
+    stats:
+      critical: 5
   behaviors:
-  - id: 18
-    name: "Cool Scimitar"
-    keywords: ["cool", "scimitar", "blade"]
-    roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
-    description: "a shiny, slightly scratched, eastern scimitar, from the warden"
-    script: "1-sword"
-    metadata:
-      level: 6
-      slot: 'wield'
-      itemLevel: 6
-      quality: rare
-      minDamage: 200
-      maxDamage: 300
-      speed: 2
-      stats:
-        critical: 5
-    behaviors:
       sellable:
-        value: 200
-        currrency: gold
+      value: 200
+      currrency: gold

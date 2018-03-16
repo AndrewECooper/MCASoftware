@@ -133,3 +133,6 @@
         gold:
           min: 100
           max: 400
+      pools:
+        - "Prison:17": 100
+        - "Prison:18": 100

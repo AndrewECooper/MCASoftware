@@ -82,6 +82,7 @@
 - id: 4
   title: The Mice
   level: 5
+  autoComplete: true
   description: |-
     The mice, or perhaps rats, seem to want the Topedus carvings, the leader of them points to you, then the statue, and holds up 3 clawed fingers, then points to the far wall, it seems that if you do what he wants, he will let you through to the other side of the large stone door.
   completeMessage: |-
@@ -97,9 +98,7 @@
     - type: ExperienceReward
       config:
         amount: 2000
-        leveledTo: QUEST
-    - item:
-       - id: "Prison:16"
+# how to add an item reward?
 - id: 5
   title: The Warden
   level: 5
