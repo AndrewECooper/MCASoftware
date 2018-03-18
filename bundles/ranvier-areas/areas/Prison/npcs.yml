@@ -99,7 +99,7 @@
       - delay: 1
 - id: 8
   keywords: ["guard", "soldier", "security", "dummy"]
-  name: "The guard"
+  name: "Guard"
   level: 5 
   description: >-
     A guard, wearing a rusty helmet and a sword on his hip
