@@ -79,6 +79,7 @@
       config: 
         currency: gold
         amount: 3  
+# add item reward: iron sword
 - id: 4
   title: The Mice
   level: 5
@@ -94,11 +95,12 @@
         count: 3
         item: 'Prison:8'
         removeItem: true
+# killgoal: kill five of any enemy
   rewards:
     - type: ExperienceReward
       config:
         amount: 2000
-# how to add an item reward?
+# add an item reward: key to cave door
 - id: 5
   title: The Warden
   level: 5
