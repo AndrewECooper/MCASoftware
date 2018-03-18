@@ -53,7 +53,7 @@ module.exports = srcPath => {
         // setup default configs
         config = Object.assign({
           delay: 5,
-          warnMessage: '%name% growls, warning you away.',
+          warnMessage: '%name% sees you, and shouts.',
           attackMessage: '%name% attacks you!',
           towards: {
             players: true,

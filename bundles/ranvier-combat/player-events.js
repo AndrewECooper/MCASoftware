@@ -275,7 +275,7 @@ module.exports = (srcPath) => {
         this.moveTo(home, _ => {
           state.CommandManager.get('look').execute(null, this);
 
-          B.sayAt(this, '<b><red>Whoops, that sucked!</red></b>');
+          B.sayAt(this, '<b><red>YOU DIED...</red></b>');
           if (killer && killer !== this) {
             B.sayAt(this, `You were killed by ${killer.name}.`);
           }

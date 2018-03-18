@@ -1,0 +1,198 @@
+- id: 1
+  title: Cell - 1
+  description: >-
+    "An eerie cell, dimly lit by the torches outside. You sense an overwhelming desire to get out of here as soon as possible."
+    -  "However, the cell door is locked. In the corner of the cell there is a mouse or something."
+    -  "Enter 'quest start mouse 1' to start the game"
+  items:
+   - id: "Prison:15"
+     respawnChance: 10
+  npcs: 
+    - id: "Prison:4"
+      respawnChance: 0
+  exits:
+    - roomId: "Prison:2"
+      direction: east
+  doors:
+    "Prison:2":
+      lockedBy: "Prison:cell-1 key"
+      locked: true
+      closed: true
+- id: 2
+  title: Hallway
+  description: "A long, wide hallway with a low ceiling. Torches and cell doors line the walls. There is a guard north of you."
+  npcs: 
+    - id: "Prison:5"
+      respawnChance: 0
+  items:
+   - id: "Prison:1"
+     respawnChance: 10
+  exits:
+    - roomId: "Prison:1"
+      direction: west
+    - roomId: "Prison:3"
+      direction: up
+    - roomId: "Prison:4"
+      direction: north
+- id: 3
+  title: All items room
+  description: "there are toys in here"
+  items:
+   - id: "Prison:2"
+     respawnChance: 10
+  exits:
+    - roomId: "Prison:2"
+      direction: down
+- id: 4
+  title: Near Hallway exit
+  description: "You are on the second level of the prison, the exit behind this guard should take you down to the first level"
+  npcs: 
+    - id: "Prison:1"
+      respawnChance: 0
+  exits: 
+    - roomId: "Prison:2"
+      direction: south
+    - roomId: "Prison:5"
+      direction: down
+- id: 5
+  title: Lower Level
+  description: "A very similar hallway to the one on the upper level, there is a guard south of you, it would be best to find a better weapon"
+  exits:
+    - roomId: "Prison:4"
+      direction: up
+    - roomId: "Prison:6"
+      direction: south
+    - roomId: "Prison:7"
+      direction: east
+    - roomId: "Prison:8"
+      direction: west
+  doors:
+    "Prison:8":
+      lockedBy: "Prison:cell-1 key"
+      locked: true
+      closed: true
+- id: 6
+  title: main exit
+  description: "a guard stand before the door, you're in for a fight"
+  npcs: 
+   - id: "Prison:3"
+     respawnChance: 0
+  items: 
+   - id: "Prison:9"
+  exits: 
+    - roomId: "Prison:5"
+      direction: north
+    - roomId: "Prison:9"
+      direction: south
+- id: 7
+  title: Cell - 2
+  description: "an abandoned cell, there is a brick missing from the wall, and a box lying on the floor nearby"
+  items: 
+   - id: "Prison:7"
+  exits: 
+    - roomId: "Prison:5"
+      direction: west
+- id: 8 
+  title: Cell - 3
+  description: "an inhabited cell, the guy in here is asleep"
+  npcs: 
+    - id: "Prison:6"
+      respawnChance: 0
+  exits: 
+    - roomId: "Prison:5"
+      direction: east
+- id: 9
+  title: The Yard
+  description: "you're out in the open, the only way out seems to be the south gate, but you'll never get through there alive, another building isn't far east from here, you may be able to get there before anyone sees you"
+  exits: 
+    - roomId: "Prison:10"
+      direction: south
+    - roomId: "Prison:6"
+      direction: north
+    - roomId: "Prison:11"
+      direction: east
+- id: 10
+  title: Main Gate
+  description: "The wall is covered with archers, you are doomed!"
+  npcs: ["Prison:7", "Prison:7", "Prison:7"]
+- id: 11
+  title: Solitary Confinement
+  description: "blah"
+  npcs: 
+   - id: "Prison:3"
+     respawnChance: 0
+  exits: 
+    - roomId: "Prison:9"
+      direction: west
+    - roomId: "Prison:12"
+      direction: down
+    - roomId: "Prison:16"
+      direction: east
+- id: 12
+  title: Solitary hall
+  description: "Before you is a strong metal door, behind it must lie the most dangerous prisoner here, or the most insane..."
+  items:
+    - id: "Prison:5"
+  npcs: 
+   - id: "Prison:8"
+     respawnChance: 0 
+   - id: "Prison:8"
+     respawnChance: 0
+  exits: 
+    - roomId: "Prison:11"
+      direction: up
+    - roomId: "Prison:13"
+      direction: east
+  doors: 
+    "Prison:13":
+      lockedBy: "Prison:17"
+      locked: true
+      closed: true
+- id: 13
+  title: Solitary Cell
+  description: "A lonely, dark cell.  The air of the room is full of melancholy, and asbestos..."
+  items: 
+    - id: "Prison:8"
+      respawnChance: 0
+  exits: 
+    - roomId: "Prison:12"
+      direction: west
+    - roomId: "Prison:14"
+      direction: down
+- id: 14
+  title: caves
+  description: "blah"
+  items: 
+    - id: "Prison:8"
+      respawnChance: 0
+  npcs: 
+    - id: "Prison:2"
+      respawnChance: 0
+  exits:
+    - roomId: "Prison:13"
+      direction: up
+    - roomId: "Prison:15"
+      direction: west
+  doors:
+    "Prison:15":
+      lockedBy: "Prison:mouse-2 key"
+      locked: true
+      closed: true
+- id: 15
+  title: harbor
+  description: "blah"
+  exits:
+    - roomId: "Prison:14"
+      direction: east
+- id: 16
+  title: Warden's Office
+  description: "blah"
+  items: 
+    - id: "Prison:12"
+      respawnChance: 0
+  npcs: 
+    - id: "Prison:9"
+      respawnChance: 0
+  exits:
+    - roomId: "Prison:11"
+      direction: west

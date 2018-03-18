@@ -1,0 +1,126 @@
+---
+- id: 1
+  title: "ESCAPE!!!"
+  level: 1
+  autoComplete: true
+  description: |-
+    You awaken from a deep sleep only to realize that you've been imprisoned. Your neck aches from sleeping on the cold concrete floor. Slowly rising to your feet, only one thing is on your mind... Getting out of here
+  completionMessage: |-
+    You got out, congrats. What is the inmate across from you doing?
+  goals:
+    - type: FetchGoal
+      config:
+        title: Find some way to pick the lock
+        count: 1
+        item: 'Prison:cell-1 key'
+    - type: FetchGoal
+      config:
+        title: Find a weapon
+        count: 1
+        item: 'Prison:1'
+    - type: EquipGoal
+      config:
+        title: Wield A Weapon
+        slot: wield 
+  rewards:
+    - type: ExperienceReward
+      config:
+        amount: 5
+        leveledTo: QUEST
+    - type: CurrencyReward
+      config:
+        currency: gold
+        amount: 45
+- id: 2
+  title: "Kill the guard"
+  level: 1
+  autoComplete: true
+  description: |-
+    The guards don't want you to escape.  You could sneak by, but the inmate wants you to kill the guard up ahead.
+
+  completionMessage: |-
+    "Loot the guard, he probably has some useful equipment on him!" says the inmate.
+    - move further down through the prison, the exit shouldn't be too far now
+  goals:
+    - type: KillGoal
+      config:
+        title: kill the guard
+        npc: 'Prison:1'
+        count: 1
+  rewards:
+    - type: ExperienceReward
+      config:
+        amount: 10
+        leveledTo: QUEST
+    - type: CurrencyReward
+      config:
+        currency: gold
+        amount: 100
+- id: 3
+  title: The mysterious statue
+  level: 3
+  description: |-
+    The thing looks like a mouse, it honors my master, Topedus.  I don't know where it might be.    (To complete the quest, input 'quest complete 1')
+  completionMessage: |-
+    "That's it! That's Topedus, give it to me!" The inmate then runs away. 
+  goals:
+    - type: FetchGoal
+      config:
+        title: Find the inmate's statue
+        count: 1
+        item: 'Prison:8'
+        removeItem: true
+  rewards: 
+    - type: ExperienceReward
+      config:
+        amount: 100
+        leveledTo: PLAYER
+    - type: CurrencyReward
+      config: 
+        currency: gold
+        amount: 3  
+- id: 4
+  title: The Mice
+  level: 5
+  description: |-
+    The mice, or perhaps rats, seem to want the Topedus carvings, the leader of them points to you, then the statue, and holds up 3 clawed fingers, then points to the far wall, it seems that if you do what he wants, he will let you through to the other side of the large stone door.
+  completeMessage: |-
+    The mouse looks at your offering, snatches away the statues, and orders 2 others to open the door, light floods through, you see a small harbor, and a raft.  Go, and be free.
+  goals:
+    - type: FetchGoal
+      config:
+        title: Find 3 Topedus carvings
+        count: 3
+        item: 'Prison:8'
+        removeItem: true
+  rewards:
+    - type: ExperienceReward
+      config:
+        amount: 2000
+        leveledTo: QUEST
+    - item:
+       - id: "Prison:16"
+- id: 5
+  title: The Warden
+  level: 5
+  description: |-
+    Nice, i want you to kill the warden, do that, and you can keep his awesome sword
+  completeMessage: |-
+    cool, loot him and the chest
+  goals:
+    - type: KillGoal
+      config:
+        title: Kill the Warden
+        npc: 'Prison:9'
+        count: 1
+  rewards:
+    - type: ExperienceReward
+      config: 
+        amount: 1000
+        leveledTo: PLAYER
+    - type: CurrencyReward
+      config:
+        amount: 1000
+        leveledTo: PLAYER
+    
+    

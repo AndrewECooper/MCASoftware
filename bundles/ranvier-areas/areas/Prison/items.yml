@@ -1,0 +1,247 @@
+- id: 1
+  name: "Heavy Stick"
+  type: WEAPON
+  roomDesc: "heavy stick"
+  keywords: [ "stick", "heavy", "rod" ]
+  description: "An arm's-length, heavy, wooden stick, with a shredded ribbon on the end."
+  script: "1-sword"
+  metadata:
+    level: 1
+    slot: 'wield'
+    itemLevel: 1
+    quality: common
+    minDamage: 1
+    maxDamage: 5
+    speed: 10
+    stats:
+      critical: 1
+  behaviors: 
+    sellable:
+      value: 5
+      currency: gold
+- id: 2
+  name: "H"
+  type: CONTAINER
+  roomDesc: "a thing called (HUGH)"
+  keywords: ["H"]
+  description: "hhhhh"
+  items: ["Prison:1", "Prison:3", "Prison:4" ,"Prison:5", "Prison:10", "Prison:8","Prison:11", "Prison:13", "Prison:14"]
+  maxItems: 100
+  metadata: 
+    noPickup: true
+- id: 3
+  name: "Iron Helmet"
+  type: ARMOR
+  roomDesc: "iron helmet"
+  keywords: ["iron", "helmet", "hat", "helm"]
+  description: "A scratched iron helmet, usually worn by the guards."
+  metadata:
+    quality: common
+    slot: "head"
+    level: 1
+    itemLevel: 1
+    stats:
+      armor: 15
+  behaviors: 
+    sellable:
+      value: 50
+      currency: gold
+- id: 4
+  name: "Chainmail Vest"
+  type: ARMOR
+  roomDesc: "Chainmail Vest"
+  keywords: ["chain", "chainmail", "vest"]
+  description: "A plain chain vest. Not too shabby."
+  metadata:
+    quality: common
+    slot: "chest"
+    level: 4
+    itemLevel: 3
+    stats:
+      armor: 45
+  behaviors:
+    sellable:
+      value: 70
+      currency: gold
+- id: 5
+  name: shiv  
+  type: WEAPON
+  roomDesc: "A shiv"
+  keywords: ["shiv"]
+  description: "a primitive, but dangerous weapon"
+  script: "1-sword"
+  metadata:
+    level: 1
+    slot: 'wield'
+    itemLevel: 1
+    quality: rare
+    minDamage: 50
+    maxDamage: 65
+    speed: 2
+    stats:
+      critical: 1
+  behaviors:
+    sellable:
+      value: 100
+      currency: gold
+- id: cell-1 key
+  name: metal pin
+  keywords: ["metal", "pin"]
+  roomDesc: "an old metal pin"
+  description: "a shiny metal pin, used in the mouse's nest, you can probably use this to pick the lock."
+  metadata:
+    quality: common
+  behaviors: 
+- id: 7
+  type: CONTAINER
+  name: "Tiny Box"
+  roomDesc: "A tiny box."
+  keywords: [ "box", "tiny", "tiny box"]
+  description: "A box that fits perfectly in the palm of your hand. It rattles when you shake it."
+  items: [ "Prison:8"]
+  closed: true
+  maxItems: 1
+  metadata:
+    noPickup: true
+- id: 8
+  name: Topedus the Mouse God
+  roomDesc: "little wooden statue"
+  keywords: ["statue", "little"] 
+  description: "A mysterious carved statue in the shape of a humanoid mouse. It feels heavy despite being made out of wood."
+  metadata:
+    quality: rare
+- id: 9
+  name: Dead creapy dude
+  type: CONTAINER
+  roomDesc: "This dude was killed by the guard."
+  keywords: ["creepy", "dude", "dead", "inmate"]
+  description: "a dead, bloody corpse of the inmate, what is in his pocket?"
+  items: ["Prison:8", "Prison:10"]
+  maxItems: 2
+  metadata:
+    noPickup: true
+- id: 10
+  name: "Iron Sword"
+  type: WEAPON
+  roomDesc: "iron sword"
+  keywords: [ "sword", "iron", "blade"]
+  description: "A meter long, light, iron sword, like the guards have." 
+  script: "1-sword"
+  metadata:
+    level: 3
+    slot: 'wield'
+    itemLevel: 3
+    quality: rare
+    minDamage: 100
+    maxDamage: 100
+    speed: 1
+    stats:
+      critical: 5
+    behaviors:
+      sellable:
+        value: 20
+        currrency: gold
+- id: 11
+  name: Steel breastplate
+  type: ARMOR
+  roomDesc: "a new, steel breastplate"
+  keywords: ["armor", "steel", "plate", "breastplate"]
+  description: "a brand new, shiny steel plate piece of armor"
+  metadata: 
+    quality: rare
+    slot: "chest"
+    level: 4
+    itemLevel: 4
+    stats: 
+      armor: 150
+  behaviors:
+    sellable:
+      value: 200
+      currency: gold
+- id: 12
+  name: dusty chest
+  type: CONTAINER
+  roomDesc: "a dusty chest with CONTRABAND written on it"
+  keywords: ["chest", "dusty", "contraband"]
+  description: "An old dusty chest with Contraband roughly carved into it, probably with a knife."
+  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8"]
+  maxItems: 10
+  metadata:
+    noPickup: true
+- id: 13
+  name: Shiny helmet
+  type: ARMOR
+  roomDesc: "A shiny, steel helmet"
+  keywords: ["Shiny", "helmet", "steel"]
+  metadata:
+    quality: rare
+    slot: "head"
+    level: 5
+    itemLevel: 5
+    stats: 
+      armor: 100
+  behaviors: 
+    sellable: 
+      value: 150
+      currency: gold
+- id: 14
+  name: iron boots
+  type: ARMOR
+  keywords: ["iron", "boots"]
+  metadata:
+    quality: rare
+    slot: legs
+    level: 1
+    itemLevel: 1
+    stats: 
+      armor: 100
+  behaviors:
+    sellable:
+      value: 180
+      currency: gold
+- id: 15
+  name: "mouse's nest"
+  type: CONTAINER
+  roomDesc: "The tiny mouse sits atop his throne. Well, his pile of leaves, fabric, flesh, and ..?"
+  keywords: ["nest", "mouse's", "twiggy thing", "throne", "pile", "flesh", "leaves"]
+  description: "The fluffy tiny mouse squeaks and moves around in his nest, revealing a shiny metal object."
+  items: ["Prison:cell-1 key"]
+  maxItems: 1
+  metadata: 
+    noPickup: true
+- id: mouse-2 key
+  name: "mouse shaped key"
+  keywords: ["mouse", "key", "shaped"]
+  roomDesc: "a strange, metal key"
+  description:  "a strange, metal key that is shaped like a mouse, the tail leads into the head of the key."
+  metadata: 
+    quality: rare
+  behaviors:  
+- id: s-3 key
+  name: "Solitary Key"
+  keywords: ["solitary", "key"]
+  roomDesc: "a rusty key from the solitary confinement offices"
+  description: "A rusty key, probably for the cell in solitary confinement."
+  metadata:
+    qualtity: common
+  behaviors:
+  - id: 18
+    name: "Cool Scimitar"
+    keywords: ["cool", "scimitar", "blade"]
+    roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
+    description: "a shiny, slightly scratched, eastern scimitar, from the warden"
+    script: "1-sword"
+    metadata:
+      level: 6
+      slot: 'wield'
+      itemLevel: 6
+      quality: rare
+      minDamage: 200
+      maxDamage: 300
+      speed: 2
+      stats:
+        critical: 5
+    behaviors:
+      sellable:
+        value: 200
+        currrency: gold
