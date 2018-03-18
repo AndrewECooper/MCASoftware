@@ -2,7 +2,7 @@
   name: "Heavy Stick"
   type: WEAPON
   roomDesc: "heavy stick"
-  keywords: [ "stick", "heavy", "rod" ]
+  keywords: [ "stick", "heavy"]
   description: "An arm's-length, heavy, wooden stick, with a shredded ribbon on the end."
   script: "1-sword"
   metadata:
