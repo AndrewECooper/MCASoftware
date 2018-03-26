@@ -25,7 +25,7 @@
   roomDesc: "a thing called (HUGH)"
   keywords: ["H"]
   description: "hhhhh"
-  items: ["Prison:1", "Prison:3", "Prison:4" ,"Prison:5", "Prison:10", "Prison:8","Prison:11", "Prison:13", "Prison:14"]
+  items: ["Prison:1", "Prison:3", "Prison:4" ,"Prison:5", "Prison:10", "Prison:8","Prison:11", "Prison:13", "Prison:14", "Prison:16", "Prison:17", "Prison:18"]
   maxItems: 100
   metadata: 
     noPickup: true
@@ -74,7 +74,7 @@
     level: 1
     slot: 'wield'
     itemLevel: 1
-    quality: rare
+    quality: uncommon
     minDamage: 50
     maxDamage: 65
     speed: 2
@@ -164,7 +164,7 @@
   roomDesc: "a dusty chest with CONTRABAND written on it"
   keywords: ["chest", "dusty", "contraband"]
   description: "An old dusty chest with Contraband roughly carved into it, probably with a knife."
-  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8", "Prison:16", "Prison:17", "Prison:18"]
+  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8"]
   maxItems: 10
   metadata:
     noPickup: true
@@ -235,7 +235,7 @@
     level: 6
     slot: 'wield'
     itemLevel: 6
-    quality: rare
+    quality: legendary
     minDamage: 200
     maxDamage: 300
     speed: 2

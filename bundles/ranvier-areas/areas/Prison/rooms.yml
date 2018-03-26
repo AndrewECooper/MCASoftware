@@ -196,4 +196,7 @@
   description: "blah"
   items: 
     - id: "Prison:8"
-    respawnChance: 0
+      respawnChance: 0
+  exits:
+    - roomId: "Prison:9"
+      direction: east
