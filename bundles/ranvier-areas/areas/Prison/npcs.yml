@@ -55,6 +55,7 @@
           max: 12
       pools:
         - "Prison:4": 100
+        - "Prison:10": 100
 - id: 4
   keywords: ['mouse']
   name: A mouse

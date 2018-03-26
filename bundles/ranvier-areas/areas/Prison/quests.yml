@@ -31,6 +31,9 @@
       config:
         currency: gold
         amount: 45
+    - type: ItemReward
+      config:
+        item: "Prison:5"
 - id: 2
   title: "Kill the guard"
   level: 1
@@ -95,12 +98,15 @@
         count: 3
         item: 'Prison:8'
         removeItem: true
-# killgoal: kill five of any enemy
+    - type: MurderGoal
+      config:
+        title: kill 5 guards
+        count: 5
   rewards:
     - type: ExperienceReward
       config:
         amount: 2000
-# add an item reward: key to cave door
+#    - type: ItemReward : key to harbor
 - id: 5
   title: The Warden
   level: 5

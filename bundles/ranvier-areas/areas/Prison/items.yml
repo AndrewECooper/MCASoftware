@@ -64,10 +64,10 @@
       value: 70
       currency: gold
 - id: 5
-  name: shiv  
+  name: iron sword
   type: WEAPON
-  roomDesc: "A shiv"
-  keywords: ["shiv"]
+  roomDesc: "An iron sword"
+  keywords: ["iron", "sword"]
   description: "a primitive, but dangerous weapon"
   script: "1-sword"
   metadata:
@@ -106,7 +106,7 @@
 - id: 8
   name: Topedus the Mouse God
   roomDesc: "little wooden statue"
-  keywords: ["statue", "little"] 
+  keywords: ["statue", "little", "topedus"] 
   description: "A mysterious carved statue in the shape of a humanoid mouse. It feels heavy despite being made out of wood."
   metadata:
     quality: rare
@@ -121,10 +121,10 @@
   metadata:
     noPickup: true
 - id: 10
-  name: "Iron Sword"
+  name: "Steel Sword"
   type: WEAPON
-  roomDesc: "iron sword"
-  keywords: [ "sword", "iron", "blade"]
+  roomDesc: "A bright, steel sword"
+  keywords: [ "sword", "steel", "blade"]
   description: "A meter long, light, iron sword, like the guards have." 
   script: "1-sword"
   metadata:
@@ -164,7 +164,7 @@
   roomDesc: "a dusty chest with CONTRABAND written on it"
   keywords: ["chest", "dusty", "contraband"]
   description: "An old dusty chest with Contraband roughly carved into it, probably with a knife."
-  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8", "Prison:18", "Prison:17"]
+  items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8", "Prison:16", "Prison:17", "Prison:18"]
   maxItems: 10
   metadata:
     noPickup: true
@@ -185,7 +185,7 @@
       value: 150
       currency: gold
 - id: 14
-  name: iron boots
+  name: Iron boots
   type: ARMOR
   keywords: ["iron", "boots"]
   metadata:
@@ -209,7 +209,7 @@
   maxItems: 1
   metadata: 
     noPickup: true
-- id: mouse-2 key
+- id: 16
   name: "mouse shaped key"
   keywords: ["mouse", "key", "shaped"]
   roomDesc: "a strange, metal key"
