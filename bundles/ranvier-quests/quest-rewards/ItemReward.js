@@ -23,13 +23,7 @@ module.exports = srcPath => {
 
       if (!config.item) {
         throw new Error(`Quest [${quest.id}] item reward has invalid configuration`);
-      }
-
-    // const moveRoom = state.RoomManager.getRoom(config.moveNpc.toRoom);
-       const ItemReward = state.ItemManager.add(config.item)
-
-
-        
+      }       
     }
   };
 };

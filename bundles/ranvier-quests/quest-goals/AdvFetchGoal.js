@@ -13,7 +13,7 @@ module.exports = srcPath => {
             title: 'Retrieve Item',
             removeItem: false,
             count: 1,
-            room: null,
+            completeRoom: null,
             item: null
           }, config);
   
@@ -25,7 +25,7 @@ module.exports = srcPath => {
         count: 0
       };
 
-      this.on('enterRoom', this._enterRoom);   
+      this.on('enterRoom', this.complete);   
       this.on('get', this._getItem);
       this.on('drop', this._dropItem);
       this.on('decay', this._dropItem);
@@ -41,16 +41,16 @@ module.exports = srcPath => {
     }
 
     complete() {
+    const AdvFetchGoal = state.RoomManager.getRoom(quest.config.completeRoom)
+      
+      if (this.state.entityReference !== this.config.completeRoom) {
+        return;
+      }
       if (this.state.count < this.config.count) {
         return;
       }
 
       const player = this.quest.player;
-
-      if (this.state.entityReference !== this.config.room) {
-        
-      }
-
 
 
       // this fetch quest by default removes all the quest items from the player inv
@@ -67,24 +67,7 @@ module.exports = srcPath => {
 
       super.complete();
     }    
-// how to move a guy
-//moveTo(nextRoom, onMoved = _ => _) {
-  //if (this.room) {
-    //this.room.emit('npcLeave', this, nextRoom);
-    //this.room.removeNpc(this);
-  //}
 
-  //this.room = nextRoom;
-  //nextRoom.addNpc(this);
-
-  //onMoved();
-
-  //nextRoom.emit('npcEnter', this);
-  //this.emit('enterRoom', nextRoom);
-//}
-
-// npc.js moveTo function
-// const moveRoom = state.RoomManager.getRoom(config.moveNpc.toRoom);
 
     _getItem(item) {
       if (item.entityReference !== this.config.item) {
@@ -126,3 +109,21 @@ module.exports = srcPath => {
     }
   };
 };
+// how to move a guy
+//moveTo(nextRoom, onMoved = _ => _) {
+  //if (this.room) {
+    //this.room.emit('npcLeave', this, nextRoom);
+    //this.room.removeNpc(this);
+  //}
+
+  //this.room = nextRoom;
+  //nextRoom.addNpc(this);
+
+  //onMoved();
+
+  //nextRoom.emit('npcEnter', this);
+  //this.emit('enterRoom', nextRoom);
+//}
+
+// npc.js moveTo function
+// const moveRoom = state.RoomManager.getRoom(config.moveNpc.toRoom);

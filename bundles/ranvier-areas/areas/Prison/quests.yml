@@ -67,9 +67,10 @@
   completionMessage: |-
     "That's it! That's Topedus, give it to me!" The inmate then runs away. 
   goals:
-    - type: FetchGoal
+    - type: AdvFetchGoal
       config:
         title: Find the inmate's statue
+        completeRoom: 'Prison:8'
         count: 1
         item: 'Prison:8'
         removeItem: true
