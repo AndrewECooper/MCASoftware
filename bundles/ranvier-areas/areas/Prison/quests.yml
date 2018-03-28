@@ -90,7 +90,7 @@
   autoComplete: true
   description: |-
     The mice, or perhaps rats, seem to want the Topedus carvings, the leader of them points to you, then the statue, and holds up 3 clawed fingers, then points to the far wall, it seems that if you do what he wants, he will let you through to the other side of the large stone door.
-  completeMessage: |-
+  completionMessage: |-
     The mouse looks at your offering, snatches away the statues, and orders 2 others to open the door, light floods through, you see a small harbor, and a raft.  Go, and be free.
   goals:
     - type: FetchGoal

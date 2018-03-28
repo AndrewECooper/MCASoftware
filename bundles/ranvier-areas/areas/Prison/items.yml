@@ -104,8 +104,8 @@
   metadata:
     noPickup: true
 - id: 8
-  name: Topedus the Mouse God
-  roomDesc: "little wooden statue"
+  name: statue of Topedus the Mouse God 
+  roomDesc: "A little wooden statue"
   keywords: ["statue", "little", "topedus"] 
   description: "A mysterious carved statue in the shape of a humanoid mouse. It feels heavy despite being made out of wood."
   metadata:
