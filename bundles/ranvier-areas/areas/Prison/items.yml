@@ -216,14 +216,13 @@
   description:  "a strange, metal key that is shaped like a mouse, the tail leads into the head of the key."
   metadata: 
     quality: rare
-  behaviors:
 - id: 17
   name: "Solitary Key"
   keywords: ["solitary", "key"]
   roomDesc: "a rusty key from the solitary confinement offices"
   description: "A rusty key, probably for the cell in solitary confinement."
   metadata:
-    qualtity: common
+    quality: common
   behaviors:  
 - id: 18
   name: "Cool Scimitar"
@@ -241,7 +240,10 @@
     speed: 2
     stats:
       critical: 5
-  behaviors:
-      sellable:
-      value: 200
-      currrency: gold
+- id: 19
+  name: "Key Orb thingy"
+  keywords: ["key", "Orb", "thingy"]
+  roomDesc: "The green orb glows with some ancient magic, it may open the dark door at the end of the room."
+  description: "The green orb glows with some ancient magic, it may open the dark door at the end of the room."
+  metadata: 
+    quality: legendary

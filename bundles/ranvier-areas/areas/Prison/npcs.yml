@@ -137,3 +137,31 @@
       pools:
         - "Prison:17": 100
         - "Prison:18": 100
+- id: 10
+  keywords: ["creepy", "scarred", "dude"]
+  name: "creepy scarred dude"
+  level: 50
+  description: "the inmate with the statue from before, he is slightly wounded"
+  attributes:
+    health: 250
+    strength: 40
+  behaviors:
+    combat: true
+    ranvier-aggro:
+    delay: 5
+    towards:
+      players: false
+      npcs: ["Prison:3"]
+- id: 11
+  keywords: ["Topedus", "god", "mouse"]
+  name: "Topedus the Mouse god"
+  level: 50
+  description: "The huge mouse looks oddly similar to the one from your cell; he looks at you... menacingly"
+  attributes: 
+    health: 2000
+    strength: 25
+  behaviors:
+    combat: true
+    lootable: 
+      pools:
+        - "Prison:19": 100

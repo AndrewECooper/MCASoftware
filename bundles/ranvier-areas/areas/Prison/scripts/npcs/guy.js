@@ -10,7 +10,7 @@ module.exports = (srcPath) => {
         if (this.hasEffectType('speaking')) {
           return;
         }
-
+// only on first entrance
         const speak = state.EffectFactory.create('speak', this, {}, {
           messageList: [
             "%player%. I've been expecting you. Please listen to me. I've lost Topedus.",

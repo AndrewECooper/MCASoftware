@@ -41,9 +41,9 @@ module.exports = srcPath => {
     }
 
     complete() {
-    const AdvFetchGoal = state.RoomManager.getRoom(quest.config.completeRoom)
+    const room = state.RoomManager.getRoom(state.player.entityReference)
       
-      if (this.state.entityReference !== this.config.completeRoom) {
+      if (this.state.room !== this.config.completeRoom) {
         return;
       }
       if (this.state.count < this.config.count) {

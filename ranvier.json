@@ -36,6 +36,6 @@
   "startingRoom": "Prison:1",
   "moveCommand": "move",
   "skillLag": 2000,
-  "defaultMaxPlayerInventory": 16,
+  "defaultMaxPlayerInventory": 8,
   "maxIdleTime": 20
 }

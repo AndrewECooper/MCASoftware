@@ -93,6 +93,7 @@
 - id: 8 
   title: Cell - 3
   description: "an inhabited cell, the guy in here is asleep"
+  script: 'questThing'
   npcs: 
     - id: "Prison:6"
       respawnChance: 0
@@ -121,6 +122,8 @@
   npcs: 
    - id: "Prison:3"
      respawnChance: 0
+   - id: "Prison:3"
+     respawnChance: 30
   exits: 
     - roomId: "Prison:9"
       direction: west
@@ -166,19 +169,16 @@
   exits:
     - roomId: "Prison:13"
       direction: up
-    - roomId: "Prison:15"
+    - roomId: "Prison:17"
       direction: west
   doors:
-    "Prison:15":
-      lockedBy: "Prison:mouse-2 key"
+    "Prison:17":
+      lockedBy: "Prison:16"
       locked: true
       closed: true
 - id: 15
   title: Harbor
   description: "blah"
-  exits:
-    - roomId: "Prison:14"
-      direction: east
 - id: 16
   title: Warden's Office
   description: "blah"
@@ -191,9 +191,21 @@
   exits:
     - roomId: "Prison:11"
       direction: west
+- id: 17
+  title: Boss room
+  description:  "You cannot return from the way you came.  A gigantic mouse is before you.  The huge mouse sits atop his throne. Well, his pile of debris... and bones."
+  npcs: "Prison:11"
+  exits: 
+    - roomId: "Prison:15"
+      direction: north
+  doors: 
+    "Prison:15":
+      lockedBy: "Prison:19"
+      locked: true
+      closed: true
 - id: 18
   title: Outhouse
-  description: "blah"
+  description: "A strong odeur rises from the aperature below the board used as a lid."
   items: 
     - id: "Prison:8"
       respawnChance: 0
