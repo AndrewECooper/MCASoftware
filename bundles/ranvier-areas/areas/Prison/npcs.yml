@@ -155,10 +155,10 @@
 - id: 11
   keywords: ["Topedus", "god", "mouse"]
   name: "Topedus the Mouse god"
-  level: 50
+  level: 10
   description: "The huge mouse looks oddly similar to the one from your cell; he looks at you... menacingly"
   attributes: 
-    health: 2000
+    health: 1300
     strength: 25
   behaviors:
     combat: true
