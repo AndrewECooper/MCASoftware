@@ -162,6 +162,3 @@
     strength: 25
   behaviors:
     combat: true
-    lootable: 
-      pools:
-        - "Prison:19": 100
