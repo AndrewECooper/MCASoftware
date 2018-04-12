@@ -14,7 +14,7 @@ module.exports = (srcPath) => {
   };
 
 };
-
+let home = state.RoomManager.getRoom(this.getMeta('waypoint.home'));
 if (!home) {
     home = state.RoomManager.startingRoom;
   }

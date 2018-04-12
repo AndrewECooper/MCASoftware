@@ -171,11 +171,11 @@
       direction: up
     - roomId: "Prison:17"
       direction: west
-  doors:
-    "Prison:17":
-      lockedBy: "Prison:16"
-      locked: true
-      closed: true
+ # doors:
+  #  "Prison:17":
+   #   lockedBy: "Prison:16"
+    #  locked: false 
+     # closed: true
 - id: 15
   title: Harbor
   description: "blah"

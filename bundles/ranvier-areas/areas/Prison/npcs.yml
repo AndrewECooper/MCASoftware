@@ -24,7 +24,7 @@
   script: 'mouse' 
   quests: ['Prison:4']
   description: >-
-    A large human shaped mouse stares at you intently, and lunges to attack
+    A large human shaped mouse stares at you intently; it has something to say.
   attributes:
     health: 500
     strength: 50
