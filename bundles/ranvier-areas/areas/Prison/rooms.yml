@@ -48,7 +48,7 @@
   description: "You are on the second level of the prison, the exit behind this guard should take you down to the first level"
   npcs: 
     - id: "Prison:1"
-      respawnChance: 0
+      respawnChance: 10
   exits: 
     - roomId: "Prison:2"
       direction: south
@@ -76,7 +76,7 @@
   description: "a guard stand before the door, you're in for a fight"
   npcs: 
    - id: "Prison:3"
-     respawnChance: 0
+     respawnChance: 10
   exits: 
     - roomId: "Prison:5"
       direction: north
@@ -121,7 +121,7 @@
   description: "blah"
   npcs: 
    - id: "Prison:3"
-     respawnChance: 0
+     respawnChance: 30
    - id: "Prison:3"
      respawnChance: 30
   exits: 
@@ -136,9 +136,9 @@
   description: "Before you is a strong metal door, behind it must lie the most dangerous prisoner here, or the most insane..."
   npcs: 
    - id: "Prison:8"
-     respawnChance: 0 
+     respawnChance: 10 
    - id: "Prison:8"
-     respawnChance: 0
+     respawnChance: 10
   exits: 
     - roomId: "Prison:11"
       direction: up
@@ -179,6 +179,7 @@
 - id: 15
   title: Harbor
   description: "blah"
+  script: 'endGame'
 - id: 16
   title: Warden's Office
   description: "blah"
