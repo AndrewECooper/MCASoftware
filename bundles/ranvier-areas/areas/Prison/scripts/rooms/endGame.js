@@ -14,4 +14,4 @@ module.exports = (srcPath) => {
   };
 
 };
-/* return to starting room (info in playerevents.js "killed")
+// player moveTo starting area (info in playerevents.js "killed")

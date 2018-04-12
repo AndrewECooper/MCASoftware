@@ -195,7 +195,9 @@
 - id: 17
   title: Boss room
   description:  "You cannot return from the way you came.  A gigantic mouse is before you.  The huge mouse sits atop his throne. Well, his pile of debris... and bones."
-  npcs: "Prison:11"
+  npcs: 
+    - id: "Prison:11"
+      respawnChance: 0
   exits: 
     - roomId: "Prison:15"
       direction: north
