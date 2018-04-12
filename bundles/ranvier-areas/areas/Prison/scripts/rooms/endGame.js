@@ -14,7 +14,4 @@ module.exports = (srcPath) => {
   };
 
 };
-let home = state.RoomManager.getRoom(this.getMeta('waypoint.home'));
-if (!home) {
-    home = state.RoomManager.startingRoom;
-  }
+/* return to starting room (info in playerevents.js "killed")
