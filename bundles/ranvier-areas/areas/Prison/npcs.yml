@@ -19,7 +19,7 @@
         - "Prison:5": 100      
 - id: 2
   keywords: ["mutant mouse", "mouse", "mutant", "rat"]
-  name: "mutant mouse"
+  name: "Miruk, High Priest of Topedus"
   level: 7
   script: 'mouse' 
   quests: ['Prison:4']

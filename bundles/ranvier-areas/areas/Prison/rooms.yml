@@ -118,12 +118,14 @@
   npcs: ["Prison:7", "Prison:7", "Prison:7"]
 - id: 11
   title: Solitary Confinement
-  description: "blah"
+  description: "The open entrance to the solitary confinement building of the prison."
   npcs: 
    - id: "Prison:3"
      respawnChance: 30
    - id: "Prison:3"
      respawnChance: 30
+   - id: "Prison:10"
+     respawnChance: 0
   exits: 
     - roomId: "Prison:9"
       direction: west
@@ -162,7 +164,8 @@
       direction: down
 - id: 14
   title: Caves
-  description: "blah"
+  description: "Some dark, musty caves, mice scurry across the ground."
+  script: 'Cave'
   npcs: 
     - id: "Prison:2"
       respawnChance: 0
@@ -178,11 +181,11 @@
      # closed: true
 - id: 15
   title: Harbor
-  description: "blah"
+  description: "You come to a harbor, the mice have left a boat for you."
   script: 'endGame'
 - id: 16
   title: Warden's Office
-  description: "blah"
+  description: "A desk sits in the back corner, the chest next to it.  A pile of letters sits hidden in the corner."
   items: 
     - id: "Prison:12"
       respawnChance: 0
@@ -201,11 +204,11 @@
   exits: 
     - roomId: "Prison:15"
       direction: north
-  doors: 
-    "Prison:15":
-      lockedBy: "Prison:19"
-      locked: true
-      closed: true
+ # doors: 
+  #  "Prison:15":
+   #   lockedBy: "Prison:19"
+    #  locked: true
+     # closed: true
 - id: 18
   title: Outhouse
   description: "A strong odeur rises from the aperature below the board used as a lid."
