@@ -13,7 +13,8 @@ module.exports = srcPath => {
             title: 'Retrieve Item',
             removeItem: false,
             count: 1,
-            completeRoom: null,
+            moveRoom: null,
+            runNpc: null,
             item: null
           }, config);
   
@@ -30,7 +31,9 @@ module.exports = srcPath => {
       this.on('drop', this._dropItem);
       this.on('decay', this._dropItem);
       this.on('start', this._checkInventory);
-    
+      console.log ("this =", this)
+      npc.on('complete', npc._run);
+      console.log ("npc = ", npc)    
 
     }
     getProgress() {
@@ -41,9 +44,9 @@ module.exports = srcPath => {
     }
 
     complete() {
-    const AdvFetchGoal = state.RoomManager.getRoom(quest.config.completeRoom)
+    const room = state.RoomManager.getRoom(state.player.entityReference)
       
-      if (this.state.entityReference !== this.config.completeRoom) {
+      if (this.state.room !== this.config.completeRoom) {
         return;
       }
       if (this.state.count < this.config.count) {
@@ -67,6 +70,14 @@ module.exports = srcPath => {
 
       super.complete();
     }    
+    _run(npc) {
+      let home = state.config.moveRoom;
+      if (npc.entityReference = runNpc) {
+        npc.moveTo(home, _ => {
+          state.CommandManager.get('look').execute(null, npc);
+        });
+      }
+    }
 
 
     _getItem(item) {

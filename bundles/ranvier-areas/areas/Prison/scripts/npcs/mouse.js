@@ -13,9 +13,10 @@ module.exports = (srcPath) => {
 
         const speak = state.EffectFactory.create('speak', this, {}, {
           messageList: [
-            "*Squeak*",
-            "*Squeak squeak*"
-             ],
+            "\n*Squeak* \n" + 
+            "*Squeak squeak* \n" + 
+            "Translation: Greetings, %player%, I am Miruk, the High Priest of Topedus. The Master, Topedus, thirsts for blood. Kill 5 guards and bring forth idols as a proper offering to Master Topedus. Otherwise, we'll use your blood for the sacrifice."
+          ],
           outputFn: message => {
             message = message.replace(/%player%/, player.name);
             state.ChannelManager.get('say').send(state, this, message);

@@ -19,12 +19,12 @@
         - "Prison:5": 100      
 - id: 2
   keywords: ["mutant mouse", "mouse", "mutant", "rat"]
-  name: "mutant mouse"
+  name: "Miruk, High Priest of Topedus"
   level: 7
   script: 'mouse' 
   quests: ['Prison:4']
   description: >-
-    A large human shaped mouse stares at you intently, and lunges to attack
+    A large human shaped mouse stares at you intently; it has something to say.
   attributes:
     health: 500
     strength: 50
@@ -48,6 +48,8 @@
     combat: true
     ranvier-aggro:
       delay: 5
+      towards:
+        npcs: false
     lootable:
       currencies:
         gold:
@@ -137,3 +139,28 @@
       pools:
         - "Prison:17": 100
         - "Prison:18": 100
+- id: 10
+  keywords: ["creepy", "scarred", "dude"]
+  name: "creepy scarred dude"
+  level: 50
+  description: "the inmate with the statue from before, he is slightly wounded"
+  attributes:
+    health: 250
+    strength: 40
+  behaviors:
+    combat: true
+    ranvier-aggro:
+      delay: 60
+      towards:
+        players: false
+        npcs: ["Prison:3"]
+- id: 11
+  keywords: ["Topedus", "god", "mouse"]
+  name: "Topedus the Mouse god"
+  level: 10
+  description: "The huge mouse looks oddly similar to the one from your cell; he looks at you... intensely"
+  attributes: 
+    health: 1300
+    strength: 25
+  behaviors:
+    combat: true

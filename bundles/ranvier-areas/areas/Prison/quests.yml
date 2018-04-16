@@ -67,10 +67,9 @@
   completionMessage: |-
     "That's it! That's Topedus, give it to me!" The inmate then runs away. 
   goals:
-    - type: AdvFetchGoal
+    - type: FetchGoal
       config:
         title: Find the inmate's statue
-        completeRoom: 'Prison:8'
         count: 1
         item: 'Prison:8'
         removeItem: true
@@ -83,15 +82,14 @@
       config: 
         currency: gold
         amount: 3  
-# add item reward: iron sword
 - id: 4
   title: The Mice
   level: 5
   autoComplete: true
   description: |-
-    The mice, or perhaps rats, seem to want the Topedus carvings, the leader of them points to you, then the statue, and holds up 3 clawed fingers, then points to the far wall, it seems that if you do what he wants, he will let you through to the other side of the large stone door.
-  completeMessage: |-
-    The mouse looks at your offering, snatches away the statues, and orders 2 others to open the door, light floods through, you see a small harbor, and a raft.  Go, and be free.
+    It seems that if you do what he wants, he will let you through to the other side of the large stone door.
+  completionMessage: |-
+    The mouse looks at your offering, snatches away the statues, and orders 2 others to open the door.
   goals:
     - type: FetchGoal
       config:
@@ -107,11 +105,10 @@
     - type: ExperienceReward
       config:
         amount: 2000
-#    - type: ItemReward : key to harbor
+#    - type: ItemReward : key to boss room door
 - id: 5
   title: The Warden
   level: 5
-  requires: ['Prison:3']
   autoComplete: true
   description: |-
     Nice, i want you to kill the warden, do that, and you can keep his awesome sword
@@ -129,5 +126,3 @@
         currency: gold
         amount: 1000
         leveledTo: PLAYER
-    
-    
