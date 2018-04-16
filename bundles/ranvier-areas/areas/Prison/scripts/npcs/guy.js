@@ -30,7 +30,6 @@ module.exports = (srcPath) => {
           speaking.remove();
         }
       } 
-      
     }
   };
 };
