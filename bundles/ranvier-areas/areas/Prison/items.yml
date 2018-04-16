@@ -2,7 +2,7 @@
   name: "Heavy Stick"
   type: WEAPON
   roomDesc: "heavy stick"
-  keywords: [ "stick", "heavy", "rod" ]
+  keywords: [ "stick", "heavy"]
   description: "An arm's-length, heavy, wooden stick, with a shredded ribbon on the end."
   script: "1-sword"
   metadata:
@@ -25,7 +25,7 @@
   roomDesc: "a thing called (HUGH)"
   keywords: ["H"]
   description: "hhhhh"
-  items: ["Prison:1", "Prison:3", "Prison:4" ,"Prison:5", "Prison:10", "Prison:8","Prison:11", "Prison:13", "Prison:14"]
+  items: ["Prison:1", "Prison:3", "Prison:4" ,"Prison:5", "Prison:10", "Prison:8","Prison:11", "Prison:13", "Prison:14", "Prison:16", "Prison:17", "Prison:18"]
   maxItems: 100
   metadata: 
     noPickup: true
@@ -64,17 +64,17 @@
       value: 70
       currency: gold
 - id: 5
-  name: shiv  
+  name: iron sword
   type: WEAPON
-  roomDesc: "A shiv"
-  keywords: ["shiv"]
+  roomDesc: "An iron sword"
+  keywords: ["iron", "sword"]
   description: "a primitive, but dangerous weapon"
   script: "1-sword"
   metadata:
     level: 1
     slot: 'wield'
     itemLevel: 1
-    quality: rare
+    quality: uncommon
     minDamage: 50
     maxDamage: 65
     speed: 2
@@ -106,7 +106,7 @@
 - id: 8
   name: Topedus the Mouse God
   roomDesc: "little wooden statue"
-  keywords: ["statue", "little"] 
+  keywords: ["statue", "little", "topedus"] 
   description: "A mysterious carved statue in the shape of a humanoid mouse. It feels heavy despite being made out of wood."
   metadata:
     quality: rare
@@ -121,10 +121,10 @@
   metadata:
     noPickup: true
 - id: 10
-  name: "Iron Sword"
+  name: "Steel Sword"
   type: WEAPON
-  roomDesc: "iron sword"
-  keywords: [ "sword", "iron", "blade"]
+  roomDesc: "A bright, steel sword"
+  keywords: [ "sword", "steel", "blade"]
   description: "A meter long, light, iron sword, like the guards have." 
   script: "1-sword"
   metadata:
@@ -185,7 +185,7 @@
       value: 150
       currency: gold
 - id: 14
-  name: iron boots
+  name: Iron boots
   type: ARMOR
   keywords: ["iron", "boots"]
   metadata:
@@ -209,39 +209,39 @@
   maxItems: 1
   metadata: 
     noPickup: true
-- id: mouse-2 key
+- id: 16
   name: "mouse shaped key"
   keywords: ["mouse", "key", "shaped"]
   roomDesc: "a strange, metal key"
   description:  "a strange, metal key that is shaped like a mouse, the tail leads into the head of the key."
   metadata: 
     quality: rare
-  behaviors:  
-- id: s-3 key
+  behaviors:
+- id: 17
   name: "Solitary Key"
   keywords: ["solitary", "key"]
   roomDesc: "a rusty key from the solitary confinement offices"
   description: "A rusty key, probably for the cell in solitary confinement."
   metadata:
     qualtity: common
+  behaviors:  
+- id: 18
+  name: "Cool Scimitar"
+  keywords: ["cool", "scimitar", "blade"]
+  roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
+  description: "a shiny, slightly scratched, eastern scimitar, from the warden"
+  script: "1-sword"
+  metadata:
+    level: 6
+    slot: 'wield'
+    itemLevel: 6
+    quality: legendary
+    minDamage: 200
+    maxDamage: 300
+    speed: 2
+    stats:
+      critical: 5
   behaviors:
-  - id: 18
-    name: "Cool Scimitar"
-    keywords: ["cool", "scimitar", "blade"]
-    roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
-    description: "a shiny, slightly scratched, eastern scimitar, from the warden"
-    script: "1-sword"
-    metadata:
-      level: 6
-      slot: 'wield'
-      itemLevel: 6
-      quality: rare
-      minDamage: 200
-      maxDamage: 300
-      speed: 2
-      stats:
-        critical: 5
-    behaviors:
       sellable:
-        value: 200
-        currrency: gold
+      value: 200
+      currrency: gold

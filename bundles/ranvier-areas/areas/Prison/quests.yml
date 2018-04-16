@@ -31,6 +31,9 @@
       config:
         currency: gold
         amount: 45
+    - type: ItemReward
+      config:
+        item: "Prison:5"
 - id: 2
   title: "Kill the guard"
   level: 1
@@ -64,9 +67,10 @@
   completionMessage: |-
     "That's it! That's Topedus, give it to me!" The inmate then runs away. 
   goals:
-    - type: FetchGoal
+    - type: AdvFetchGoal
       config:
         title: Find the inmate's statue
+        completeRoom: 'Prison:8'
         count: 1
         item: 'Prison:8'
         removeItem: true
@@ -79,9 +83,11 @@
       config: 
         currency: gold
         amount: 3  
+# add item reward: iron sword
 - id: 4
   title: The Mice
   level: 5
+  autoComplete: true
   description: |-
     The mice, or perhaps rats, seem to want the Topedus carvings, the leader of them points to you, then the statue, and holds up 3 clawed fingers, then points to the far wall, it seems that if you do what he wants, he will let you through to the other side of the large stone door.
   completeMessage: |-
@@ -93,16 +99,20 @@
         count: 3
         item: 'Prison:8'
         removeItem: true
+    - type: MurderGoal
+      config:
+        title: kill 5 guards
+        count: 5
   rewards:
     - type: ExperienceReward
       config:
         amount: 2000
-        leveledTo: QUEST
-    - item:
-       - id: "Prison:16"
+#    - type: ItemReward : key to harbor
 - id: 5
   title: The Warden
   level: 5
+  requires: ['Prison:3']
+  autoComplete: true
   description: |-
     Nice, i want you to kill the warden, do that, and you can keep his awesome sword
   completeMessage: |-
@@ -114,12 +124,9 @@
         npc: 'Prison:9'
         count: 1
   rewards:
-    - type: ExperienceReward
-      config: 
-        amount: 1000
-        leveledTo: PLAYER
     - type: CurrencyReward
       config:
+        currency: gold
         amount: 1000
         leveledTo: PLAYER
     

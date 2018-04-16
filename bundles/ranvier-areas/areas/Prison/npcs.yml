@@ -55,6 +55,7 @@
           max: 12
       pools:
         - "Prison:4": 100
+        - "Prison:10": 100
 - id: 4
   keywords: ['mouse']
   name: A mouse
@@ -76,7 +77,7 @@
   description: |- 
     "The scarred inmate looks at you with curiosity, 'I want to get out of here too, get my statue for me, and I'll show you the way out of here.' "
     - enter 'quest start dude 1' to start the quest
-  quests: ['Prison:3']
+  quests: ['Prison:3', 'Prison:5']
   attributes: 
     health: 200
     strength: 50
@@ -84,7 +85,7 @@
     combat: true
     lootable: 
       pools:
-        - "Prison:dude": 100
+        - "Prison:18": 100
 - id: 7
   keywords: ['archer', 'guard', 'scary']
   name: Archer on the wall
@@ -99,7 +100,7 @@
       - delay: 1
 - id: 8
   keywords: ["guard", "soldier", "security", "dummy"]
-  name: "The guard"
+  name: "Guard"
   level: 5 
   description: >-
     A guard, wearing a rusty helmet and a sword on his hip
@@ -129,5 +130,10 @@
     ranvier-aggro:
       - delay: 10
     lootable:
-      pools: 
-        - "Prison:warden": 100
+      currencies: 
+        gold:
+          min: 100
+          max: 400
+      pools:
+        - "Prison:17": 100
+        - "Prison:18": 100

@@ -35,8 +35,8 @@
     - roomId: "Prison:4"
       direction: north
 - id: 3
-  title: All items room
-  description: "there are toys in here"
+  title: Cheat room
+  description: "loot the hugh"
   items:
    - id: "Prison:2"
      respawnChance: 10
@@ -72,13 +72,11 @@
       locked: true
       closed: true
 - id: 6
-  title: main exit
+  title: Main exit
   description: "a guard stand before the door, you're in for a fight"
   npcs: 
    - id: "Prison:3"
      respawnChance: 0
-  items: 
-   - id: "Prison:9"
   exits: 
     - roomId: "Prison:5"
       direction: north
@@ -111,6 +109,8 @@
       direction: north
     - roomId: "Prison:11"
       direction: east
+    - roomId: "Prison:18"
+      direction: west
 - id: 10
   title: Main Gate
   description: "The wall is covered with archers, you are doomed!"
@@ -131,8 +131,6 @@
 - id: 12
   title: Solitary hall
   description: "Before you is a strong metal door, behind it must lie the most dangerous prisoner here, or the most insane..."
-  items:
-    - id: "Prison:5"
   npcs: 
    - id: "Prison:8"
      respawnChance: 0 
@@ -160,11 +158,8 @@
     - roomId: "Prison:14"
       direction: down
 - id: 14
-  title: caves
+  title: Caves
   description: "blah"
-  items: 
-    - id: "Prison:8"
-      respawnChance: 0
   npcs: 
     - id: "Prison:2"
       respawnChance: 0
@@ -179,7 +174,7 @@
       locked: true
       closed: true
 - id: 15
-  title: harbor
+  title: Harbor
   description: "blah"
   exits:
     - roomId: "Prison:14"
@@ -196,3 +191,12 @@
   exits:
     - roomId: "Prison:11"
       direction: west
+- id: 18
+  title: Outhouse
+  description: "blah"
+  items: 
+    - id: "Prison:8"
+      respawnChance: 0
+  exits:
+    - roomId: "Prison:9"
+      direction: east
