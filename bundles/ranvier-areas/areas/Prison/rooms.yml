@@ -164,7 +164,7 @@
       direction: down
 - id: 14
   title: Caves
-  description: "Some dark, musty caves, mice scurry across the ground."
+  description: "Some dark, musty caves. Mice scurry across the ground."
   script: 'Cave'
   npcs: 
     - id: "Prison:2"
