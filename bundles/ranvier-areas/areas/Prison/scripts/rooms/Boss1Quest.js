@@ -5,7 +5,7 @@ module.exports = (srcPath) => {
 
   return  {
     listeners: {
-      look:state => function (player) {
+      playerEnter:state => function (player) {
         const quest = state.QuestFactory.create(state, 'Prison:5', player);
         if (player.questTracker.canStart(quest)) {
           player.questTracker.start(quest);
