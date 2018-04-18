@@ -68,7 +68,7 @@
   type: WEAPON
   roomDesc: "An iron sword"
   keywords: ["iron", "sword"]
-  description: "a primitive, but dangerous weapon"
+  description: "a primitive but dangerous weapon"
   script: "1-sword"
   metadata:
     level: 1
@@ -88,7 +88,7 @@
   name: metal pin
   keywords: ["metal", "pin"]
   roomDesc: "an old metal pin"
-  description: "a shiny metal pin, used in the mouse's nest, you can probably use this to pick the lock."
+  description: "a shiny metal pin used in the mouse's nest. You can probably use this to pick the lock."
   metadata:
     quality: common
   behaviors: 
@@ -111,11 +111,11 @@
   metadata:
     quality: rare
 - id: 9
-  name: Dead creapy dude
+  name: Dead creepy dude
   type: CONTAINER
   roomDesc: "This dude was killed by the guard."
   keywords: ["creepy", "dude", "dead", "inmate"]
-  description: "a dead, bloody corpse of the inmate, what is in his pocket?"
+  description: "a dead, bloody corpse of the inmate. It looks like something is sticking out of his pocket."
   items: ["Prison:8", "Prison:10"]
   maxItems: 2
   metadata:
@@ -125,7 +125,7 @@
   type: WEAPON
   roomDesc: "A bright, steel sword"
   keywords: [ "sword", "steel", "blade"]
-  description: "A meter long, light, iron sword, like the guards have." 
+  description: "A meter long, light iron sword like the guards have." 
   script: "1-sword"
   metadata:
     level: 3
@@ -163,7 +163,7 @@
   type: CONTAINER
   roomDesc: "a dusty chest with CONTRABAND written on it"
   keywords: ["chest", "dusty", "contraband"]
-  description: "An old dusty chest with Contraband roughly carved into it, probably with a knife."
+  description: "An old dusty chest with the word Contraband roughly carved into it probably with a knife."
   items: ["Prison:11", "Prison:13", "Prison:14", "Prison:8"]
   maxItems: 10
   metadata:
@@ -202,18 +202,24 @@
 - id: 15
   name: "mouse's nest"
   type: CONTAINER
+<<<<<<< HEAD
   roomDesc: "The tiny mouse sits atop his throne. Well, his pile of leaves, fabric, flesh, and ..?"
   keywords: ["nest", "twiggy thing", "throne", "pile", "flesh", "leaves"]
   description: "The fluffy tiny mouse squeaks and moves around in his nest, revealing a shiny metal object."
+=======
+  roomDesc: "The tiny mouse sits atop his throne. Well, his pile of leaves, fabric, flesh, and other strange objects."
+  keywords: ["nest", "mouse's", "throne", "leaves"]
+  description: "The tiny, fluffy mouse squeaks and moves around in his nest, revealing a shiny metal object."
+>>>>>>> 0c7d92c34f38b1fbc4a0a91b47513524c0477e4a
   items: ["Prison:cell-1 key"]
   maxItems: 1
-  metadata: 
-    noPickup: true
+  metadata:
+   noPickup: true
 - id: 16
   name: "mouse shaped key"
   keywords: ["mouse", "key", "shaped"]
   roomDesc: "a strange, metal key"
-  description:  "a strange, metal key that is shaped like a mouse, the tail leads into the head of the key."
+  description:  "a strange, metal key that is shaped like a mouse. The tail leads into the head of the key."
   metadata: 
     quality: rare
 - id: 17
@@ -227,8 +233,8 @@
 - id: 18
   name: "Cool Scimitar"
   keywords: ["cool", "scimitar", "blade"]
-  roomDesc: "a shiny, slightly scratched, eastern scimitar, from the warden"
-  description: "a shiny, slightly scratched, eastern scimitar, from the warden"
+  roomDesc: "a shiny, slightly scratched Eastern scimitar from the warden"
+  description: "a shiny, slightly scratched Eastern scimitar from the warden"
   script: "1-sword"
   metadata:
     level: 6
@@ -243,7 +249,31 @@
 - id: 19
   name: "Key Orb thingy"
   keywords: ["key", "Orb", "thingy"]
-  roomDesc: "The green orb glows with some ancient magic, it may open the dark door at the end of the room."
-  description: "The green orb glows with some ancient magic, it may open the dark door at the end of the room."
+  roomDesc: "The green orb glows with some ancient magic. It may open the dark door at the end of the room."
+  description: "The green orb glows with some ancient magic. It may open the dark door at the end of the room."
   metadata: 
     quality: legendary
+- id: 20
+  name: "Pile of letters"
+  type: CONTAINER
+  keywords: ["pile", "letters"]
+  roomDesc: "A scattered pile of letters"
+  description: >-
+    "You flip through the pages of the letters, scanning them for any kind of information."
+    -"Eventually, you find an interesting looking handwritten letter, addressed to the warden himself."
+  items: ["Prison:21"]
+  maxItems: 1
+  metadata: 
+   noPickup: true
+- id: 21
+name: "Old document"
+keywords: ["document", "letter"]
+roomDesc: "An old, handwritten letter. Its edges are yellowed from age"
+description: >-
+ "The scribbled text is difficult to make out. It doesn't seem to be written in English"
+-"The only legible line reads "Ph'nglui mglw'nafh Topedus R'lyeh wgah'nagl fhtagn.""
+-"You are extremely confused."
+metadata:
+  quality: rare
+  
+
