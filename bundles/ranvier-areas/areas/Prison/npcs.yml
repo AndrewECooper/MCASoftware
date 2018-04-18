@@ -141,6 +141,7 @@
   keywords: ["creepy", "scarred", "dude"]
   name: "creepy scarred dude"
   level: 50
+  script: 'Boss1Quest'
   description: "the inmate with the statue from before, he is slightly wounded"
   attributes:
     health: 250
