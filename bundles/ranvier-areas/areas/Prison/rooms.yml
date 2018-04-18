@@ -204,11 +204,11 @@
   exits: 
     - roomId: "Prison:15"
       direction: north
- # doors: 
-  #  "Prison:15":
-   #   lockedBy: "Prison:19"
-    #  locked: true
-     # closed: true
+  doors: 
+    "Prison:15":
+      lockedBy: "Prison:19"
+      locked: true
+      closed: true
 - id: 18
   title: Outhouse
   description: "A strong odeur rises from the aperature below the board used as a lid."
