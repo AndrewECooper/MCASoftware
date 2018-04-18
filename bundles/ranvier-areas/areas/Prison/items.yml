@@ -202,15 +202,9 @@
 - id: 15
   name: "mouse's nest"
   type: CONTAINER
-<<<<<<< HEAD
-  roomDesc: "The tiny mouse sits atop his throne. Well, his pile of leaves, fabric, flesh, and ..?"
-  keywords: ["nest", "twiggy thing", "throne", "pile", "flesh", "leaves"]
-  description: "The fluffy tiny mouse squeaks and moves around in his nest, revealing a shiny metal object."
-=======
   roomDesc: "The tiny mouse sits atop his throne. Well, his pile of leaves, fabric, flesh, and other strange objects."
   keywords: ["nest", "mouse's", "throne", "leaves"]
   description: "The tiny, fluffy mouse squeaks and moves around in his nest, revealing a shiny metal object."
->>>>>>> 0c7d92c34f38b1fbc4a0a91b47513524c0477e4a
   items: ["Prison:cell-1 key"]
   maxItems: 1
   metadata:
