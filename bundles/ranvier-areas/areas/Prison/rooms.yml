@@ -119,10 +119,11 @@
 - id: 11
   title: Solitary Confinement
   description: "The open entrance to the solitary confinement building of the prison."
+  script: 'Boss1Quest'
   npcs: 
-   - id: "Prison:3"
+   - id: "Prison:12"
      respawnChance: 30
-   - id: "Prison:3"
+   - id: "Prison:12"
      respawnChance: 30
    - id: "Prison:10"
      respawnChance: 0

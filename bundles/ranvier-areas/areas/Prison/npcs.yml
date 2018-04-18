@@ -148,10 +148,10 @@
   behaviors:
     combat: true
     ranvier-aggro:
-      delay: 60
+      delay: 90
       towards:
         players: false
-        npcs: ["Prison:3"]
+        npcs: ["Prison:12"]
 - id: 11
   keywords: ["Topedus", "god", "mouse"]
   name: "Topedus the Mouse god"
@@ -165,3 +165,23 @@
     lootable: 
       pools:
         - "Prison:19"
+- id: 12
+  keywords: ["guard", "officer","soldier", "guardsman"]
+  name: "guardsman"
+  level: 5
+  description: >-
+    a man in dark uniform, bearing a sword and ready for rowdy prisoners
+  attributes:
+    health: 300
+    strength: 15
+  behaviors:
+    combat: true
+    ranvier-aggro:
+      delay: 5
+      towards:
+        npcs: false
+    lootable:
+      currencies:
+        gold:
+          min: 1
+          max: 12
