@@ -122,9 +122,9 @@
   script: 'Boss1Quest'
   npcs: 
    - id: "Prison:12"
-     respawnChance: 30
+     respawnChance: 0
    - id: "Prison:12"
-     respawnChance: 30
+     respawnChance: 0
    - id: "Prison:10"
      respawnChance: 0
   exits: 

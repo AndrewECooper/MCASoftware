@@ -48,8 +48,6 @@
     combat: true
     ranvier-aggro:
       delay: 5
-      towards:
-        npcs: false
     lootable:
       currencies:
         gold:
