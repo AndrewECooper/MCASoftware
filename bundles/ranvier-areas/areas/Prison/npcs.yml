@@ -63,7 +63,6 @@
   name: A mouse
   level: 2
   description: "In the corner of your cell, there is a disgustingly cute rodent thing. It looks at you intently."
-  quests: ['Prison:1']
 - id: 5
   keywords: ['prisoner', 'inmate', 'destitute']
   name: destitute inmate
@@ -77,8 +76,7 @@
   level: 47
   script: 'guy'
   description: |- 
-    "The scarred inmate looks at you with curiosity, 'I want to get out of here too, get my statue for me, and I'll show you the way out of here.' "
-    - enter 'quest start dude 1' to start the quest
+    "The scarred inmate looks at you with curiosity"
   quests: ['Prison:3', 'Prison:5']
   attributes: 
     health: 200
@@ -164,3 +162,6 @@
     strength: 25
   behaviors:
     combat: true
+    lootable: 
+      pools:
+        - "Prison:19"

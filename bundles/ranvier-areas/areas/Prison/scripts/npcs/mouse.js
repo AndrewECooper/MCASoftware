@@ -10,6 +10,9 @@ module.exports = (srcPath) => {
         if (this.hasEffectType('speaking')) {
           return;
         }
+        if (player.entered3Before > 0) {
+          return;
+        }
 
         const speak = state.EffectFactory.create('speak', this, {}, {
           messageList: [
@@ -22,6 +25,7 @@ module.exports = (srcPath) => {
           }
         });
         this.addEffect(speak);
+        player.entered3Before = (player.entered3Before || 0) + 1;
       },
 
       playerLeave: state => function (player) {

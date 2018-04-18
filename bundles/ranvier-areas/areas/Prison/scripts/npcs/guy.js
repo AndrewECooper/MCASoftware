@@ -10,7 +10,9 @@ module.exports = (srcPath) => {
         if (this.hasEffectType('speaking')) {
           return;
         }
-         // only on first entrance
+        if (player.entered1Before > 0){
+          return;
+        }
         const speak = state.EffectFactory.create('speak', this, {}, {
           messageList: [
             "%player%. I've been expecting you. Please listen to me. I've lost Topedus.",
@@ -22,6 +24,8 @@ module.exports = (srcPath) => {
           }
         });
         this.addEffect(speak);
+        player.entered1Before = (player.entered1Before || 0) + 1;
+        
       },
 
       playerLeave: state => function (player) {

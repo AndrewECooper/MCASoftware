@@ -6,10 +6,10 @@ module.exports = (srcPath) => {
   return  {
     listeners: {
       playerEnter: state => function (player) {
-        const quest = state.QuestFactory.create(state, 'Prison:3', player);
+        const quest = state.QuestFactory.create(state, 'Prison:1', player);
         if (player.questTracker.canStart(quest)) {
           player.questTracker.start(quest);
-          }       
+        }
       }
     }
   };

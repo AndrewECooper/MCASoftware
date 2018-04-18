@@ -16,9 +16,14 @@ module.exports = (srcPath) => {
         // TIP:DefaultAttributes: This is where you can change the default attributes for players
         attributes: {
           health: 100,
+         
           strength: 20,
           agility: 20,
           intellect: 20,
+          entered1Before: 0,
+          entered2Before: 0,
+          entered3Before: 0,
+          entered4Before: 0,
           stamina: 20,
           armor: 0,
           critical: 0

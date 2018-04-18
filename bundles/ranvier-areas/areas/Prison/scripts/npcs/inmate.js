@@ -10,6 +10,9 @@ module.exports = (srcPath) => {
         if (this.hasEffectType('speaking')) {
           return;
         }
+        if (player.entered2Before > 0){
+          return;
+        }
 
         const speak = state.EffectFactory.create('speak', this, {}, {
           messageList: [
@@ -21,13 +24,15 @@ module.exports = (srcPath) => {
           }
         });
         this.addEffect(speak);
+        // make the dialogue only happen the first time (entered room Before)
+        player.entered2Before = (player.entered2Before || 0) + 1;        
       },
-
+      
       playerLeave: state => function (player) {
         const speaking = this.effects.getByType('speaking');
         if (speaking) {
           speaking.remove();
-        }
+        }      
       }
     }
   };

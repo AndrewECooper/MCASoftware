@@ -3,10 +3,10 @@
   description: >-
     "An eerie cell, dimly lit by the torches outside. You sense an overwhelming desire to get out of here as soon as possible."
     -  "However, the cell door is locked. In the corner of the cell there is a mouse or something."
-    -  "Enter 'quest start mouse 1' to start the game"
   items:
    - id: "Prison:15"
      respawnChance: 10
+  script: 'startQuest'
   npcs: 
     - id: "Prison:4"
       respawnChance: 0
