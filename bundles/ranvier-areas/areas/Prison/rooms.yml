@@ -56,7 +56,7 @@
       direction: down
 - id: 5
   title: Lower Level
-  description: "A very similar hallway to the one on the upper level, there is a guard south of you, it would be best to find a better weapon"
+  description: "A very similar hallway to the one on the upper level, there is a guard south of you."
   exits:
     - roomId: "Prison:4"
       direction: up

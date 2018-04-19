@@ -260,12 +260,12 @@
   metadata: 
    noPickup: true
 - id: 21
-name: "Old document"
-keywords: ["document", "letter"]
-roomDesc: "An old, handwritten letter. Its edges are yellowed from age"
-description: >-
- "The scribbled text is difficult to make out. It doesn't seem to be written in English"
--"The only legible line reads "Ph'nglui mglw'nafh Topedus R'lyeh wgah'nagl fhtagn.""
--"You are extremely confused."
-metadata:
-  quality: rare
+  name: "Old document"
+  keywords: ["document", "letter"]
+  roomDesc: "An old, handwritten letter. Its edges are yellowed from age"
+  description: >-
+    "The scribbled text is difficult to make out. It doesn't seem to be written in English"
+    "The only legible line reads "Ph'nglui mglw'nafh Topedus R'lyeh wgah'nagl fhtagn.""
+    "You are extremely confused."
+  metadata:
+    quality: rare
