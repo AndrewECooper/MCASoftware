@@ -31,9 +31,9 @@
       config:
         currency: gold
         amount: 45
-#    - type: ItemReward
-#      config:
-#        item: "Prison:5"
+    - type: ItemReward
+      config:
+        item: 'Prison:4'
 - id: 2
   title: "Kill the guard"
   level: 1
@@ -105,7 +105,7 @@
     - type: ExperienceReward
       config:
         amount: 2000
-#    - type: ItemReward : key to boss room door
+    - type: ItemReward
 - id: 5
   title: The Warden
   level: 5
