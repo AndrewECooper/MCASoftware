@@ -2,7 +2,7 @@
 
 module.exports = (srcPath) => {
   const Broadcast = require(srcPath + 'Broadcast');
- // const AreaData = require(srcPath + 'AreaData');
+  const bd = require(srcPath + 'DataManagement/BundleDataManager');
 
   return  {
     listeners: {
@@ -14,12 +14,16 @@ module.exports = (srcPath) => {
                                 "start of the game.</b>", 80);
         player.setAttributeToMax('health');
         
+        new bd(state).loadBundles(srcPath.replace("/src/", ""), true);
+
         let home = state.RoomManager.startingRoom;
         console.log("home = ", home);
 
         player.moveTo(home, _ => {
           state.CommandManager.get('look').execute(null, player);
         });
+
+        player.inventory.clear();
       }
     }
   };

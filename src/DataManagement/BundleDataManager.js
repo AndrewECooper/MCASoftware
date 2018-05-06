@@ -14,7 +14,7 @@ class BundleDataManager {
     this.bundles = [];
   }
 
-  loadBundles(baseDirectory) {
+  loadBundles(baseDirectory, reset) {
     this.bundles = [];
     this.basePath = path.join(baseDirectory, "bundles");
 
@@ -26,12 +26,12 @@ class BundleDataManager {
         continue;
       }
 
-      this.loadBundle(bundle);
+      this.loadBundle(bundle, reset);
     }
   }
 
-  loadBundle(bundleName) {
-    this.bundles[bundleName] = new BundleData(this.state, bundleName, path.join(this.basePath, bundleName)).load();
+  loadBundle(bundleName, reset) {
+    this.bundles[bundleName] = new BundleData(this.state, bundleName, path.join(this.basePath, bundleName)).load(reset);
   }
 
   getBundles() {
