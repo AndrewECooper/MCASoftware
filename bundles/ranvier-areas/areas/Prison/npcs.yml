@@ -6,7 +6,7 @@
     An old soldier now watches the exits, kill him, or try to sneak past
   attributes:
     health: 200
-    strength: 9
+    strength: 11
   behaviors:
     combat: true
     lootable:
@@ -38,12 +38,12 @@
 - id: 3
   keywords: ["guard", "officer","soldier", "guardsman"]
   name: "guardsman"
-  level: 5
+  level: 10
   description: >-
     a man in dark uniform, bearing a sword and ready for rowdy prisoners
   attributes:
     health: 300
-    strength: 15
+    strength: 17
   behaviors:
     combat: true
     ranvier-aggro:
@@ -104,7 +104,7 @@
     A guard, wearing a rusty helmet and a sword on his hip
   attributes:
     health: 200
-    strength: 9
+    strength: 12
   behaviors:
     combat: true
     ranvier-aggro: 
@@ -122,7 +122,7 @@
     a beastly, grizzled man decked out in full armor, with a shiny curved scimitar on his side.
   attributes:
     health: 500
-    strength: 20
+    strength: 30
   behaviors:
     combat: true
     ranvier-aggro:
@@ -139,7 +139,7 @@
   keywords: ["creepy", "scarred", "dude"]
   name: "creepy scarred dude"
   level: 50
-  description: "the inmate with the statue from before, he is slightly wounded"
+  description: "an inmate with a statue cradled in his arm, he is slightly wounded"
   attributes:
     health: 250
     strength: 40
@@ -156,13 +156,17 @@
   level: 10
   description: "The huge mouse looks oddly similar to the one from your cell; he looks at you... intensely"
   attributes: 
-    health: 1300
+    health: 1200
     strength: 25
   behaviors:
     combat: true
     lootable: 
+      currencies: 
+        gold: 
+          min: 1000
+          max: 10000
       pools:
-        - "Prison:19"
+        - "Prison:19": 100
 - id: 12
   keywords: ["guard", "officer","soldier", "guardsman"]
   name: "guardsman"

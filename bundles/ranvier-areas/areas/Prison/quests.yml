@@ -6,7 +6,7 @@
   description: |-
     You awaken from a deep sleep only to realize that you've been imprisoned. Your neck aches from sleeping on the cold concrete floor. Slowly rising to your feet, only one thing is on your mind... Getting out of here
   completionMessage: |-
-    You got out, congrats. Now what?
+    You got out of your cell, congrats.
   goals:
     - type: FetchGoal
       config:
@@ -31,9 +31,9 @@
       config:
         currency: gold
         amount: 45
-    - type: ItemReward
-      config:
-        item: 'Prison:4'
+#    - type: ItemReward
+#      config:
+#        item: 'Prison:4'
 - id: 2
   title: "Kill the guard"
   level: 1
@@ -105,7 +105,7 @@
     - type: ExperienceReward
       config:
         amount: 2000
-    - type: ItemReward
+#    - type: ItemReward
 - id: 5
   title: The Warden
   level: 5

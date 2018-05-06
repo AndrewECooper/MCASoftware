@@ -10,9 +10,9 @@
     slot: 'wield'
     itemLevel: 1
     quality: common
-    minDamage: 1
-    maxDamage: 5
-    speed: 10
+    minDamage: 5
+    maxDamage: 10
+    speed: 2
     stats:
       critical: 1
   behaviors: 
@@ -69,7 +69,6 @@
   roomDesc: "An iron sword"
   keywords: ["iron", "sword"]
   description: "a primitive but dangerous weapon"
-  script: "1-sword"
   metadata:
     level: 1
     slot: 'wield'
@@ -126,7 +125,6 @@
   roomDesc: "A bright, steel sword"
   keywords: [ "sword", "steel", "blade"]
   description: "A meter long, light iron sword like the guards have." 
-  script: "1-sword"
   metadata:
     level: 3
     slot: 'wield'
@@ -229,7 +227,6 @@
   keywords: ["cool", "scimitar", "blade"]
   roomDesc: "a shiny, slightly scratched Eastern scimitar from the warden"
   description: "a shiny, slightly scratched Eastern scimitar from the warden"
-  script: "1-sword"
   metadata:
     level: 6
     slot: 'wield'

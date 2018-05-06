@@ -30,8 +30,8 @@
   exits:
     - roomId: "Prison:1"
       direction: west
-    - roomId: "Prison:3"
-      direction: up
+#    - roomId: "Prison:3"
+ #     direction: up
     - roomId: "Prison:4"
       direction: north
 - id: 3
@@ -73,10 +73,11 @@
       closed: true
 - id: 6
   title: Main exit
-  description: "a guard stand before the door, you're in for a fight"
+  description: "You come to a large wooden door and see the light filtering through the cracks in the wood. You realize that this must be the way out."
+  script: 'guard'
   npcs: 
    - id: "Prison:3"
-     respawnChance: 10
+     respawnChance: 30
   exits: 
     - roomId: "Prison:5"
       direction: north
@@ -108,9 +109,19 @@
       direction: south
     - roomId: "Prison:6"
       direction: north
-    - roomId: "Prison:11"
-      direction: east
     - roomId: "Prison:18"
+      direction: west
+    - roomId: "Prison:19"
+      direction: east
+- id: 19
+  title: Entrance to Solitary Confinement
+  description: "This is a checkpoint.  Enter 'waypoint save' to activate it.  If you die, enter 'recall' to return here."
+  behaviors:
+    waypoint: true
+  exits: 
+    - roomId: "Prison:11"
+      direction: east    
+    - roomId: "Prison:9"
       direction: west
 - id: 10
   title: Main Gate
@@ -122,13 +133,13 @@
   script: 'Boss1Quest'
   npcs: 
    - id: "Prison:12"
-     respawnChance: 0
+     respawnChance: 30
    - id: "Prison:12"
-     respawnChance: 0
+     respawnChance: 30
    - id: "Prison:10"
      respawnChance: 0
   exits: 
-    - roomId: "Prison:9"
+    - roomId: "Prison:19"
       direction: west
     - roomId: "Prison:12"
       direction: down
@@ -139,9 +150,9 @@
   description: "Before you is a strong metal door, behind it must lie the most dangerous prisoner here, or the most insane..."
   npcs: 
    - id: "Prison:8"
-     respawnChance: 10 
+     respawnChance: 30 
    - id: "Prison:8"
-     respawnChance: 10
+     respawnChance: 30
   exits: 
     - roomId: "Prison:11"
       direction: up
@@ -178,7 +189,7 @@
  # doors:
   #  "Prison:17":
    #   lockedBy: "Prison:16"
-    #  locked: false 
+    #  locked: true
      # closed: true
 - id: 15
   title: Harbor
@@ -192,7 +203,7 @@
       respawnChance: 0
   npcs: 
     - id: "Prison:9"
-      respawnChance: 0
+      respawnChance: 30
   exits:
     - roomId: "Prison:11"
       direction: west
@@ -201,7 +212,7 @@
   description:  "You cannot return from the way you came.  A gigantic mouse is before you.  The huge mouse sits atop his throne. Well, his pile of debris... and bones."
   npcs: 
     - id: "Prison:11"
-      respawnChance: 0
+      respawnChance: 100
   exits: 
     - roomId: "Prison:15"
       direction: north

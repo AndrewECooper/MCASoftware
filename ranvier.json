@@ -27,9 +27,9 @@
     "debug-commands"
   ],
   "maxAccountNameLength": 20,
-  "minAccountNameLength": 3,
+  "minAccountNameLength": 1,
   "maxPlayerNameLength": 20,
-  "minPlayerNameLength": 3,
+  "minPlayerNameLength": 1,
   "maxCharacters": 3,
   "allowMultiplay": false,
   "reportToAdmins": false,

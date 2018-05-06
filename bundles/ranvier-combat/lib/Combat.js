@@ -228,6 +228,9 @@ class Combat {
 
     return speed;
   }
+  static getWeapon(attacker) {
+    let weapon = attacker.level;
+  }
 
   /**
    * Get a damage amount adjusted by attack power/weapon speed
@@ -236,9 +239,9 @@ class Combat {
    * @return {number}
    */
   static normalizeWeaponDamage(attacker, amount) {
-    let speed = this.getWeaponSpeed(attacker);
+    let weapon = this.getWeapon(attacker);
     amount += attacker.hasAttribute('strength') ? attacker.getAttribute('strength') : attacker.level;
-    return Math.round(amount / 3.5 * speed);
+    return Math.random() * amount +1;
   }
 }
 
