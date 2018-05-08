@@ -14,8 +14,8 @@ module.exports = (srcPath) => {
                                 "start of the game.</b>", 80);
         player.setAttributeToMax('health');
 
-        console.log("Source Path: ", srcPath);
-        new bd(state).loadBundles(srcPath.replace("\\src/", ""), true);
+        // console.log("Source Path: ", srcPath);
+        // new bd(state).loadBundles(srcPath.replace("\\src/", ""), true);
         
         let home = state.RoomManager.startingRoom;
         console.log("home = ", home);

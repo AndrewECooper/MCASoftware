@@ -9,7 +9,7 @@
   script: 'startQuest'
   npcs: 
     - id: "Prison:4"
-      respawnChance: 0
+      respawnChance: 30
   exits:
     - roomId: "Prison:2"
       direction: east
@@ -23,7 +23,7 @@
   description: "A long, wide hallway with a low ceiling. Torches and cell doors line the walls. There is a guard north of you."
   npcs: 
     - id: "Prison:5"
-      respawnChance: 0
+      respawnChance: 30
   items:
    - id: "Prison:1"
      respawnChance: 10
@@ -48,7 +48,7 @@
   description: "You are on the second level of the prison, the exit behind this guard should take you down to the first level"
   npcs: 
     - id: "Prison:1"
-      respawnChance: 10
+      respawnChance: 30
   exits: 
     - roomId: "Prison:2"
       direction: south
@@ -88,6 +88,7 @@
   description: "an abandoned cell, there is a brick missing from the wall, and a box lying on the floor nearby"
   items: 
    - id: "Prison:7"
+     respawnChance: 30
   exits: 
     - roomId: "Prison:5"
       direction: west
@@ -137,7 +138,7 @@
    - id: "Prison:12"
      respawnChance: 30
    - id: "Prison:10"
-     respawnChance: 0
+     respawnChance: 30
   exits: 
     - roomId: "Prison:19"
       direction: west
@@ -168,7 +169,7 @@
   description: "A lonely, dark cell.  The air of the room is full of melancholy, and asbestos..."
   items: 
     - id: "Prison:8"
-      respawnChance: 0
+      respawnChance: 30
   exits: 
     - roomId: "Prison:12"
       direction: west
@@ -180,7 +181,7 @@
   script: 'Cave'
   npcs: 
     - id: "Prison:2"
-      respawnChance: 0
+      respawnChance: 30
   exits:
     - roomId: "Prison:13"
       direction: up
@@ -200,7 +201,7 @@
   description: "A desk sits in the back corner, the chest next to it.  A pile of letters sits hidden in the corner."
   items: 
     - id: "Prison:12"
-      respawnChance: 0
+      respawnChance: 30
   npcs: 
     - id: "Prison:9"
       respawnChance: 30
@@ -226,7 +227,7 @@
   description: "A strong odeur rises from the aperature below the board used as a lid."
   items: 
     - id: "Prison:8"
-      respawnChance: 0
+      respawnChance: 30
   exits:
     - roomId: "Prison:9"
       direction: east

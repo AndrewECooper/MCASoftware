@@ -97,10 +97,6 @@
         count: 3
         item: 'Prison:8'
         removeItem: true
-    - type: MurderGoal
-      config:
-        title: kill 5 guards
-        count: 5
   rewards:
     - type: ExperienceReward
       config:
