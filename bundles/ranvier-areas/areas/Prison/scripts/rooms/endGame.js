@@ -9,9 +9,9 @@ module.exports = (srcPath) => {
       playerEnter: state => function (player) {
         Broadcast.sayAt(player);
         Broadcast.sayAt(player, "<b>You can smell the sea as you climb into the boat and work the sails. " +
-                                "<Red> You escaped the prison, well done.  Now you sail into the open " +
-                                "sea with no destination, you are free.</Red> You now return to the " + 
-                                "start of the game.</b>", 80);
+                                "<Yellow> You escaped the prison, well done.  Now you sail into the open " +
+                                "sea with no destination, you are free.</Yellow> <blue>You now return to the " + 
+                                "start of the game.</blue></b>", 80);
         player.setAttributeToMax('health');
 
         // new bd(state).loadBundles(srcPath.replace("\\src/", ""), true);
