@@ -98,7 +98,7 @@
   script: 'questThing'
   npcs: 
     - id: "Prison:6"
-      respawnChance: 0
+      respawnChance: 100
   exits: 
     - roomId: "Prison:5"
       direction: east
