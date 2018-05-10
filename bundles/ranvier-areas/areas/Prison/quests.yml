@@ -31,9 +31,6 @@
       config:
         currency: gold
         amount: 45
-#    - type: ItemReward
-#      config:
-#        item: 'Prison:4'
 - id: 2
   title: "Kill the guard"
   level: 1
