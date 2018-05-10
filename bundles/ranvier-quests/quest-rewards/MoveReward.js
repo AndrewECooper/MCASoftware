@@ -7,11 +7,7 @@ module.exports = srcPath => {
 
   return class MoveReward extends QuestReward {
     static reward(GameState, quest, config, player) {
-      const mover = this._getStuff(quest, config);
-      const mRoom = this._getStuff(quest, config)
-        mover.moveTo(mRoom, _ => {
-          state.CommandManager.get('look').execute(null, mover);
-      });
+
     }
   
     static display(GameState, quest, config, player) {
@@ -21,8 +17,6 @@ module.exports = srcPath => {
 
     static _getStuff(quest, config) {
       config = Object.assign({
-        mover: null,
-        mRoom: null,
       }, config);
 
       if (!config.mover) {
