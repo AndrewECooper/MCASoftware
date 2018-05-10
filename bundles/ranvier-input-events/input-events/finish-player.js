@@ -24,6 +24,7 @@ module.exports = (srcPath) => {
           entered2Before: 0,
           entered3Before: 0,
           entered4Before: 0,
+          entered5Before: 0,
           stamina: 20,
           armor: 0,
           critical: 0

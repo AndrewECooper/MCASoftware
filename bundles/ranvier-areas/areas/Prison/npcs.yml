@@ -75,15 +75,17 @@
   script: 'guy'
   description: |- 
     "The scarred inmate looks at you with curiosity"
-  quests: ['Prison:3', 'Prison:5']
+  quests: ['Prison:3']
   attributes: 
     health: 200
     strength: 50
   behaviors:
     combat: true
-    lootable: 
-      pools:
-        - "Prison:18": 100
+    ranvier-aggro:
+      delay: 60
+      towards:
+        players: false
+        npcs: ["Prison:12"]
 - id: 7
   keywords: ['archer', 'guard', 'scary']
   name: Archer on the wall
@@ -135,21 +137,6 @@
       pools:
         - "Prison:17": 100
         - "Prison:18": 100
-- id: 10
-  keywords: ["creepy", "scarred", "dude"]
-  name: "creepy scarred dude"
-  level: 50
-  description: "an inmate with a statue cradled in his arm, he is slightly wounded"
-  attributes:
-    health: 250
-    strength: 40
-  behaviors:
-    combat: true
-    ranvier-aggro:
-      delay: 60
-      towards:
-        players: false
-        npcs: ["Prison:12"]
 - id: 11
   keywords: ["Topedus", "god", "mouse"]
   name: "Topedus the Mouse god"
@@ -187,3 +174,7 @@
         gold:
           min: 1
           max: 12
+- id: 10
+  keywords: ["placeholder"]
+  name: "Placeholder"
+  description: "Placeholder"

@@ -37,7 +37,6 @@
   autoComplete: true
   description: |-
     The guards don't want you to escape.  You could sneak by, but the inmate wants you to kill the guard up ahead.
-
   completionMessage: |-
     "Loot the guard, he probably has some useful equipment on him!" says the inmate.
     - move further down through the prison, the exit shouldn't be too far now
