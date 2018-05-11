@@ -137,9 +137,6 @@
      respawnChance: 30
    - id: "Prison:12"
      respawnChance: 30
-   - id: "Prison:6"
-     respawnChance: 30
-     # placeholder = 6guy
   exits: 
     - roomId: "Prison:19"
       direction: west
